@@ -68,35 +68,47 @@ section.about {
 .about-content {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
     &__left {
         flex: 1 1 auto;
         position: relative;
         padding: 30px;
         @media (max-width: 1440px) { padding: 30px 10px 30px 30px; }
-        @media (max-width: 1000px) { padding: 20px 10px 20px 20px; }
-        @media (max-width: 900px) { display: none; }
+        @media (max-width: 1200px) { padding: 20px 0px 20px 20px; }
+        // @media (max-width: 900px) { display: none; }
     }
     &__img {
-        padding-bottom: 93%;
-        @media (max-width: 1440px) {padding-bottom: 110%;}
+        padding-bottom: 100%;
+        @media (max-width: 1200px) {padding-bottom: 117%;}
         @media (max-width: 1000px) {padding-bottom: 125%;}
+        @media (max-width: 900px) {padding-bottom: 40%; width: 40%; margin: 0 auto;}
+        @media (max-width: 600px) {padding-bottom: 50%; width: 50%;}
+        @media (max-width: 400px) {padding-bottom: 80%; width: 80%;}
         border: 2px solid #785117;
+        @media (max-width: 500px) {
+            border: none;
+        }
         border-radius: 40px;
         img {
             border-radius: 40px;
             box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.25);;
             top: -30px;
             left: -30px;
-            @media (max-width: 1000px) {
+            @media (max-width: 1200px) {
                 top: -20px;
                 left: -20px;
+            }
+            @media (max-width: 500px) {
+                top: 0px;
+                left: 0px;
             }
         }
     }
     &__right {
         flex: 0 1 70%;
-        @media (max-width: 900px) { flex: 0 1 100%; margin-bottom: 30px; padding: 0px; }
-        @media (max-width: 500px) { margin-bottom: 15px; }
+        @media (max-width: 900px) { flex: 0 1 100%; padding: 0px; }
         padding: 10px 0px 20px 30px;
         p {
             font-family: 'TypeyMctypeface';
@@ -110,8 +122,15 @@ section.about {
                 font-size: 15px;
                 line-height: calc(30px / 18px * 100%); 
             }
+            @media (max-width: 400px) {
+                font-size: 14px;
+                line-height: calc(30px / 18px * 100%); 
+            }
             &:not(:first-child) {
                 text-indent: 50px;
+            }
+            &:last-of-type {
+                margin-bottom: 20px;
             }
         }
     }
@@ -119,13 +138,17 @@ section.about {
 .about-link {
     display: block;
     width: fit-content;
-    margin: 0 auto;
+    // margin: 0 auto;
     text-transform: uppercase;
     padding: 20px 35px;
     font-family: 'LiteraturnayaBook';
     font-size: 18px;
     @media (max-width: 1200px) {
         padding: 15px 20px;
+        font-size: 16px;
+    }
+    @media (max-width: 600px) {
+        padding: 10px 15px;
         font-size: 16px;
     }
     color:#785117;
