@@ -5,7 +5,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    background-color: rgba(215, 182, 98, 0.11);
+    background-color: #f3f1d5;
 
     &__logo {
         height: 57px;
@@ -19,7 +19,7 @@
 }
 
 .header-container {
-    // z-index: 1;
+    z-index: 2;
     min-height: 80px;
     position: relative;
     padding: 10px 71px;

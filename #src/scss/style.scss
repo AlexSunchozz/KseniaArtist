@@ -1,11 +1,12 @@
 @import 'generalstyle.scss';
 @import 'headerlight.scss';
 
+.showcase-block{position: relative; top: 80px; left: 0; width: 100%; height: 100%;}
 .showcase {
     position: relative;
-    top: 80px;
+    top: 0px;
     left: 0px;
-    padding-bottom: 36.65%;
+    padding-bottom: 43.8%;
     
     &__die{
         position: absolute;
@@ -23,6 +24,7 @@
         left: 0;
         width: 100%;
         height: 100%;
+<<<<<<< HEAD
     }
 
     &__text{
@@ -40,3 +42,20 @@
 section.about {
     padding: 145px 30px;
 }
+=======
+    }   
+}
+.showcase__text{
+    z-index: 2;
+    position: absolute;
+    width: 65%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'TypeyMctypeface';
+    font-size: 42px;
+    line-height: 131%;
+    text-align: center;
+    color: #F3F1D5;
+}
+>>>>>>> 1e0ab9bd9a2ae3c36ea418221d366a8fe3883969
