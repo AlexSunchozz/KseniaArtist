@@ -8,7 +8,8 @@ burger.addEventListener('click', ()=>{
 // slider on index
 // СЛАЙДЕР
 $('.religious-slider').slick({
-    centerMode: true,
+    // infinite: false,
+    // centerMode: true,
     // centerPadding: '80px',
     slidesToShow: 3,
     // adaptiveHeight: true,

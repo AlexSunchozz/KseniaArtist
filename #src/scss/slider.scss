@@ -15,13 +15,13 @@
 }
 /* Слайд */
 .slick-slide{
-    height: 200px !important;
-    width: 200px !important;
-    // opacity: .5;
-    img {
-        height: 200px !important;
-        width: 200px !important;
-    }
+    // height: 200px !important;
+    // width: 200px !important;
+    // // opacity: .5;
+    // img {
+    //     height: 200px !important;
+    //     width: 200px !important;
+    // }
 }
 /* Слайд активный (показывается) */
 .slick-slide.slick-active{
@@ -30,14 +30,16 @@
 .slick-slide.slick-current{}
 /* Слайд по центру */
 .slick-slide.slick-center{
-    opacity: 1;
-    // z-index: 10000;
-    border: 2px solid red;
-    // padding: 30px;
-    margin: 0px 30px;
+    // opacity: 1;
+    // // z-index: 10000;
+    // border: 2px solid red;
+    // // padding: 30px;
+    // margin: 0px 60px;
 }
 /* Клонированный слайд */
-.slick-slide.slick-cloned{}
+.slick-slide.slick-cloned{
+    // display: none;
+}
 /* Стрелка */
 .slick-arrow{}
 /* Стрелка влево */

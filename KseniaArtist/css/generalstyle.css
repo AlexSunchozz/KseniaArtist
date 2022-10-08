@@ -129,27 +129,11 @@ h6 {
 
 /* Слайд */
 
-.slick-slide {
-  height: 200px !important;
-  width: 200px !important;
-}
-
-.slick-slide img {
-  height: 200px !important;
-  width: 200px !important;
-}
-
 /* Слайд активный (показывается) */
 
 /* Слайд основной */
 
 /* Слайд по центру */
-
-.slick-slide.slick-center {
-  opacity: 1;
-  border: 2px solid red;
-  margin: 0px 30px;
-}
 
 /* Клонированный слайд */
 
