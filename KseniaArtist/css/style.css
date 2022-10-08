@@ -456,7 +456,7 @@ section.about {
 }
 
 .about-content__img {
-  padding-bottom: 93%;
+  padding-bottom: 100%;
   border: 2px solid #785117;
   border-radius: 40px;
 }
@@ -486,12 +486,15 @@ section.about {
   text-indent: 50px;
 }
 
+.about-content__right p:last-of-type {
+  margin-bottom: 20px;
+}
+
 .about-link {
   display: block;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto;
   text-transform: uppercase;
   padding: 20px 35px;
   font-family: "LiteraturnayaBook";
@@ -522,10 +525,6 @@ section.religious {
     padding: 30px 10px 30px 30px;
   }
 
-  .about-content__img {
-    padding-bottom: 110%;
-  }
-
   .about-content__right p {
     font-size: 16px;
     line-height: 187.5%;
@@ -553,6 +552,19 @@ section.religious {
     font-size: 20px;
   }
 
+  .about-content__left {
+    padding: 20px 0px 20px 20px;
+  }
+
+  .about-content__img {
+    padding-bottom: 117%;
+  }
+
+  .about-content__img img {
+    top: -20px;
+    left: -20px;
+  }
+
   .about-link {
     padding: 15px 20px;
     font-size: 16px;
@@ -560,17 +572,8 @@ section.religious {
 }
 
 @media (max-width: 1000px) {
-  .about-content__left {
-    padding: 20px 10px 20px 20px;
-  }
-
   .about-content__img {
     padding-bottom: 125%;
-  }
-
-  .about-content__img img {
-    top: -20px;
-    left: -20px;
   }
 }
 
@@ -638,15 +641,23 @@ section.religious {
     padding: 0px 25px;
   }
 
-  .about-content__left {
-    display: none;
+  .about-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .about-content__img {
+    padding-bottom: 40%;
+    width: 40%;
+    margin: 0 auto;
   }
 
   .about-content__right {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
-    margin-bottom: 30px;
     padding: 0px;
   }
 }
@@ -672,6 +683,16 @@ section.religious {
 
   .header-container {
     padding: 5px 20px;
+  }
+
+  .about-content__img {
+    padding-bottom: 50%;
+    width: 50%;
+  }
+
+  .about-link {
+    padding: 10px 15px;
+    font-size: 16px;
   }
 }
 
@@ -722,8 +743,13 @@ section.religious {
     bottom: 7px;
   }
 
-  .about-content__right {
-    margin-bottom: 15px;
+  .about-content__img {
+    border: none;
+  }
+
+  .about-content__img img {
+    top: 0px;
+    left: 0px;
   }
 
   .about-content__right p {
@@ -741,5 +767,17 @@ section.religious {
 @media (max-width: 420px) {
   .title span {
     width: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-content__img {
+    padding-bottom: 80%;
+    width: 80%;
+  }
+
+  .about-content__right p {
+    font-size: 14px;
+    line-height: 166.6666666667%;
   }
 }
