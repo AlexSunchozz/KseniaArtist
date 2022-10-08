@@ -2,6 +2,10 @@
 @import 'headerlight.scss';
 
 .showcase-block{position: relative; top: 80px; left: 0; width: 100%; height: 100%;}
+.shpwcase-block::after{
+    content:'';
+    
+}
 .showcase {
     position: relative;
     top: 0px;
@@ -38,7 +42,7 @@
     }
 }
 .showcase__text{
-    z-index: 2;
+    z-index: 1;
     position: absolute;
     width: 65%;
     top: 50%;
