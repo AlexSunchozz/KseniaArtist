@@ -103,7 +103,7 @@ h6 {
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color: #F7F8E3;
   height: 100%;
   font-family: "LiteraturnayaBook";
 }
@@ -127,7 +127,7 @@ body.lock {
 }
 
 .container {
-  max-width: 1250px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
   -webkit-box-sizing: content-box;
