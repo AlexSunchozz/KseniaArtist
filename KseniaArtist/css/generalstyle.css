@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   padding: 0;
   margin: 0;
@@ -102,6 +104,69 @@ h6 {
   font-style: normal;
 }
 
+/* Слайдер */
+
+/* Слайдер запущен */
+
+/* Слайдер с точками */
+
+/* Ограничивающая оболочка */
+
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* Слайд */
+
+.slick-slide {
+  height: 200px !important;
+  width: 200px !important;
+}
+
+.slick-slide img {
+  height: 200px !important;
+  width: 200px !important;
+}
+
+/* Слайд активный (показывается) */
+
+/* Слайд основной */
+
+/* Слайд по центру */
+
+.slick-slide.slick-center {
+  opacity: 1;
+  border: 2px solid red;
+  margin: 0px 30px;
+}
+
+/* Клонированный слайд */
+
+/* Стрелка */
+
+/* Стрелка влево */
+
+/* Стрелка вправо */
+
+/* Стрелка не активная */
+
+/* Точки (булиты) */
+
+/* Активная точка */
+
+/* Элемент точки */
+
 body {
   background-color: #F7F8E3;
   height: 100%;
@@ -127,9 +192,8 @@ body.lock {
 }
 
 .container {
-  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 10px 71px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
@@ -180,4 +244,60 @@ body.lock {
   width: 90px;
   height: 3px;
   background-color: #785117;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 10px 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .title {
+    margin-bottom: 40px;
+  }
+
+  .title h2 {
+    font-size: 36px;
+    padding: 0px 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 5px 20px;
+  }
+
+  .title h2 {
+    font-size: 32px;
+  }
+
+  .title span {
+    width: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    min-height: 60px;
+  }
+
+  .title {
+    margin-bottom: 30px;
+  }
+
+  .title h2 {
+    font-size: 28px;
+    padding: 0px 15px;
+  }
+
+  .title span {
+    width: 50px;
+  }
+}
+
+@media (max-width: 420px) {
+  .title span {
+    width: 30px;
+  }
 }

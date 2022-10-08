@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   padding: 0;
   margin: 0;
@@ -102,6 +104,69 @@ h6 {
   font-style: normal;
 }
 
+/* Слайдер */
+
+/* Слайдер запущен */
+
+/* Слайдер с точками */
+
+/* Ограничивающая оболочка */
+
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* Слайд */
+
+.slick-slide {
+  height: 200px !important;
+  width: 200px !important;
+}
+
+.slick-slide img {
+  height: 200px !important;
+  width: 200px !important;
+}
+
+/* Слайд активный (показывается) */
+
+/* Слайд основной */
+
+/* Слайд по центру */
+
+.slick-slide.slick-center {
+  opacity: 1;
+  border: 2px solid red;
+  margin: 0px 30px;
+}
+
+/* Клонированный слайд */
+
+/* Стрелка */
+
+/* Стрелка влево */
+
+/* Стрелка вправо */
+
+/* Стрелка не активная */
+
+/* Точки (булиты) */
+
+/* Активная точка */
+
+/* Элемент точки */
+
 body {
   background-color: #F7F8E3;
   height: 100%;
@@ -127,9 +192,8 @@ body.lock {
 }
 
 .container {
-  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 10px 71px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
@@ -408,7 +472,7 @@ section.about {
 }
 
 .about-content__img {
-  padding-bottom: 90%;
+  padding-bottom: 93%;
   border: 2px solid #785117;
   border-radius: 40px;
 }
@@ -469,7 +533,26 @@ section.religious {
   padding: 145px 0px 0px;
 }
 
+@media (max-width: 1440px) {
+  .about-content__left {
+    padding: 30px 10px 30px 30px;
+  }
+
+  .about-content__img {
+    padding-bottom: 110%;
+  }
+
+  .about-content__right p {
+    font-size: 16px;
+    line-height: 187.5%;
+  }
+}
+
 @media (max-width: 1200px) {
+  .container {
+    padding: 10px 40px;
+  }
+
   .header-container {
     padding: 10px 40px;
   }
@@ -484,6 +567,26 @@ section.religious {
 
   .menu__list-item a:hover {
     font-size: 20px;
+  }
+
+  .about-link {
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-content__left {
+    padding: 20px 10px 20px 20px;
+  }
+
+  .about-content__img {
+    padding-bottom: 125%;
+  }
+
+  .about-content__img img {
+    top: -20px;
+    left: -20px;
   }
 }
 
@@ -541,6 +644,29 @@ section.religious {
   }
 }
 
+@media (max-width: 900px) {
+  .title {
+    margin-bottom: 40px;
+  }
+
+  .title h2 {
+    font-size: 36px;
+    padding: 0px 25px;
+  }
+
+  .about-content__left {
+    display: none;
+  }
+
+  .about-content__right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin-bottom: 30px;
+    padding: 0px;
+  }
+}
+
 @media (max-width: 650px) {
   .menu {
     width: 70%;
@@ -548,12 +674,41 @@ section.religious {
 }
 
 @media (max-width: 600px) {
+  .container {
+    padding: 5px 20px;
+  }
+
+  .title h2 {
+    font-size: 32px;
+  }
+
+  .title span {
+    width: 60px;
+  }
+
   .header-container {
     padding: 5px 20px;
   }
 }
 
 @media (max-width: 500px) {
+  .container {
+    min-height: 60px;
+  }
+
+  .title {
+    margin-bottom: 30px;
+  }
+
+  .title h2 {
+    font-size: 28px;
+    padding: 0px 15px;
+  }
+
+  .title span {
+    width: 50px;
+  }
+
   .header__logo {
     height: 45px;
     width: 110px;
@@ -582,10 +737,25 @@ section.religious {
   .header-burger.active span:last-child {
     bottom: 7px;
   }
+
+  .about-content__right {
+    margin-bottom: 15px;
+  }
+
+  .about-content__right p {
+    font-size: 15px;
+    line-height: 166.6666666667%;
+  }
 }
 
 @media (max-width: 460px) {
   .menu {
     width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .title span {
+    width: 30px;
   }
 }
