@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 body {
-  background-color: #f7f7f7;
+  background-color: #F7F8E3;
   height: 100%;
   font-family: "LiteraturnayaBook";
 }
@@ -103,7 +103,7 @@ body.lock {
 }
 
 .container {
-  max-width: 1250px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: content-box;
@@ -405,10 +405,6 @@ body.lock {
   padding: 0 120px;
 }
 
-section.about {
-  padding: 145px 30px;
-}
-
 .showcase__text {
   z-index: 2;
   position: absolute;
@@ -421,4 +417,67 @@ section.about {
   line-height: 131%;
   text-align: center;
   color: #F3F1D5;
+}
+
+section.about {
+  padding: 245px 0px 0px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+}
+.about-content__left {
+  flex: 1 1 auto;
+  position: relative;
+  padding: 30px;
+}
+.about-content__img {
+  padding-bottom: 90%;
+  border: 2px solid #785117;
+  border-radius: 40px;
+}
+.about-content__img img {
+  border-radius: 40px;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.25);
+  top: -30px;
+  left: -30px;
+}
+.about-content__right {
+  flex: 0 1 70%;
+  padding: 10px 0px 20px 30px;
+}
+.about-content__right p {
+  font-family: "TypeyMctypeface";
+  font-size: 18px;
+  line-height: 166.6666666667%;
+}
+.about-content__right p:not(:first-child) {
+  text-indent: 50px;
+}
+
+.about-link {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  text-transform: uppercase;
+  padding: 20px 35px;
+  font-family: "LiteraturnayaBook";
+  font-size: 18px;
+  color: #785117;
+  border: 2px solid #E2C988;
+  border-radius: 40px;
+  box-shadow: 0px 0px 10px rgba(120, 81, 23, 0.25);
+  transition: all ease 0.8s;
+}
+.about-link:hover {
+  background-color: #fff;
+  transition: all ease 0.8s;
+  box-shadow: 0px 0px 20px rgba(120, 81, 23, 0.25);
+}
+
+section.religious {
+  padding: 145px 0px 0px;
 }
