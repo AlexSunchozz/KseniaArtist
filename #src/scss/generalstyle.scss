@@ -51,3 +51,21 @@ body.lock{overflow: hidden;}
     flex: 1 1 auto;
     position: relative;
 }
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    h2 {
+        padding: 0px 30px;
+        color: #785117;
+        text-transform: uppercase;
+        font-size: 42px;
+    }
+    span {
+        display: block;
+        width: 90px;
+        height: 3px;
+        background-color: #785117;
+    }
+}
