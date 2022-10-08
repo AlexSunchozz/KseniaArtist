@@ -128,8 +128,22 @@ body.lock {
 }
 
 .title {
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.title h2 {
+  padding: 0px 30px;
   color: #785117;
+  text-transform: uppercase;
+  font-size: 42px;
+}
+.title span {
+  display: block;
+  width: 90px;
+  height: 3px;
+  background-color: #785117;
 }
 
 .header {
@@ -138,7 +152,7 @@ body.lock {
   left: 0;
   top: 0;
   width: 100%;
-  background-color: rgba(215, 182, 98, 0.11);
+  background-color: #f3f1d5;
 }
 .header__logo {
   height: 57px;
@@ -156,6 +170,7 @@ body.lock {
 }
 
 .header-container {
+  z-index: 2;
   min-height: 80px;
   position: relative;
   padding: 10px 71px;
@@ -349,11 +364,19 @@ body.lock {
   }
 }
 
-.showcase {
+.showcase-block {
   position: relative;
   top: 80px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.showcase {
+  position: relative;
+  top: 0px;
   left: 0px;
-  padding-bottom: 36.65%;
+  padding-bottom: 43.8%;
 }
 .showcase__die {
   position: absolute;
@@ -384,4 +407,18 @@ body.lock {
 
 section.about {
   padding: 145px 30px;
+}
+
+.showcase__text {
+  z-index: 2;
+  position: absolute;
+  width: 65%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "TypeyMctypeface";
+  font-size: 42px;
+  line-height: 131%;
+  text-align: center;
+  color: #F3F1D5;
 }

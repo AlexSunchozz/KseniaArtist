@@ -351,6 +351,21 @@ body.lock {
 }
 
 .showcase__text {
+  z-index: 4;
+  font-family: "TypeyMctypeface";
+  font-size: 42px;
+  line-height: 131%;
+  text-align: center;
+  color: #F3F1D5;
+  z-index: 2;
+  padding: 0 120px;
+}
+
+section.about {
+  padding: 145px 30px;
+}
+
+.showcase__text {
   z-index: 2;
   position: absolute;
   width: 65%;
@@ -363,10 +378,6 @@ body.lock {
   line-height: 131%;
   text-align: center;
   color: #F3F1D5;
-}
-
-section.about {
-  padding: 145px 30px;
 }
 
 @media (max-width: 1200px) {
