@@ -1,6 +1,8 @@
 @import 'generalstyle.scss';
 @import 'headerlight.scss';
+@import 'footerlight.scss';
 
+//SHOWCASE
 .showcase-block{
     position: relative; 
     top: 80px; 
@@ -69,6 +71,7 @@
     }
 }
 
+//ОБ АВТОРЕ
 section.about {
     padding: 145px 0px 0px;
 }
@@ -143,104 +146,7 @@ section.about {
     }
 }
 
-// .about-content {
-//     display: flex;
-//     justify-content: space-between;
-//     @media (max-width: 900px) {
-//         flex-direction: column;
-//     }
-//     &__left {
-//         flex: 1 1 auto;
-//         position: relative;
-//         padding: 30px;
-//         @media (max-width: 1440px) { padding: 30px 10px 30px 30px; }
-//         @media (max-width: 1200px) { padding: 20px 0px 20px 20px; }
-//         // @media (max-width: 900px) { display: none; }
-//     }
-//     &__img {
-//         padding-bottom: 100%;
-//         @media (max-width: 1200px) {padding-bottom: 117%;}
-//         @media (max-width: 1000px) {padding-bottom: 125%;}
-//         @media (max-width: 900px) {padding-bottom: 40%; width: 40%; margin: 0 auto;}
-//         @media (max-width: 600px) {padding-bottom: 50%; width: 50%;}
-//         @media (max-width: 400px) {padding-bottom: 80%; width: 80%;}
-//         border: 2px solid #785117;
-//         @media (max-width: 500px) {
-//             border: none;
-//         }
-//         border-radius: 40px;
-//         img {
-//             border-radius: 40px;
-//             box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.25);;
-//             top: -30px;
-//             left: -30px;
-//             @media (max-width: 1200px) {
-//                 top: -20px;
-//                 left: -20px;
-//             }
-//             @media (max-width: 500px) {
-//                 top: 0px;
-//                 left: 0px;
-//             }
-//         }
-//     }
-//     &__right {
-//         flex: 0 1 70%;
-//         @media (max-width: 900px) { flex: 0 1 100%; padding: 0px; }
-//         padding: 10px 0px 20px 30px;
-//         p {
-//             font-family: 'TypeyMctypeface';
-//             font-size: 18px;
-//             line-height: calc(30px / 18px * 100%);
-//             @media (max-width: 1440px) {
-//                 font-size: 16px;
-//                 line-height: calc(30px / 16px * 100%); 
-//             }
-//             @media (max-width: 500px) {
-//                 font-size: 15px;
-//                 line-height: calc(30px / 18px * 100%); 
-//             }
-//             @media (max-width: 400px) {
-//                 font-size: 14px;
-//                 line-height: calc(30px / 18px * 100%); 
-//             }
-//             &:not(:first-child) {
-//                 text-indent: 50px;
-//             }
-//             &:last-of-type {
-//                 margin-bottom: 20px;
-//             }
-//         }
-//     }
-// }
-// .about-link {
-//     display: block;
-//     width: fit-content;
-//     // margin: 0 auto;
-//     text-transform: uppercase;
-//     padding: 20px 35px;
-//     font-family: 'LiteraturnayaBook';
-//     font-size: 18px;
-//     @media (max-width: 1200px) {
-//         padding: 15px 20px;
-//         font-size: 16px;
-//     }
-//     @media (max-width: 600px) {
-//         padding: 10px 15px;
-//         font-size: 16px;
-//     }
-//     color:#785117;
-//     border: 2px solid #E2C988;
-//     border-radius: 40px;
-//     box-shadow: 0px 0px 10px rgba(120, 81, 23, 0.25);
-//     transition: all ease 0.8s;
-//     &:hover {
-//         background-color: #fff;
-//         transition: all ease 0.8s;
-//         box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.14);
-//     }
-// }
-
+//РЕЛИГИОЗНОЕ ИСКУССТВО
 section.religious {
     padding: 145px 0px 0px;
 }
@@ -306,7 +212,6 @@ section.religious {
     margin: 0 auto 55px;
 }
 
-
 // ЖИПОВПИСЬ
 .painting {
     padding: 145px 0px 0px;
@@ -342,7 +247,8 @@ section.religious {
     }
 
     &__container-row-item {
-        flex: 0 1 45%;
+        // flex: 0 1 45%;
+        flex: 0 1 42.7%;
         @media (max-width: 600px) {
             &:not(:last-child) {
                 margin-bottom: 30px;
@@ -354,7 +260,7 @@ section.religious {
     position: relative;
     top: 0px;
     left: 0px;
-    padding-bottom: 80%;
+    padding-bottom: 92.4%;
     @media (max-width: 900px) {padding-bottom: 90%;}
     @media (max-width: 600px) {padding-bottom: 60%; width: 60%; margin: 0 auto;}
     @media (max-width: 500px) {padding-bottom: 55%; width: 55%;}
@@ -416,7 +322,8 @@ section.religious {
     // margin: 0 auto;
 }
 
-.mosaic {
+//МОЗАЙКА + ДПИ
+.mosaic, .dpi {
     padding:145px 0px 0px;
 
     &__container {
@@ -439,7 +346,7 @@ section.religious {
     &__container-item:not(:last-child){@media(max-width:768px){margin: 0 auto 90px;}}
     .more-link{margin-top: 120px;}
 }
-.item-mosaic {  
+.item-mosaic, .item-dpi {  
     position: relative;
     border: 1px solid #785117;
     filter: drop-shadow(2px 5px 15px rgba(0, 0, 0, 0.4));;
