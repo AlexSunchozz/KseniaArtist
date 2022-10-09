@@ -70,7 +70,7 @@
 }
 
 section.about {
-    padding: 145px 0px 90px;
+    padding: 145px 0px 0px;
 }
 .about {
 
@@ -252,7 +252,6 @@ section.religious {
     // @media (max-width: 600px) {
     //     padding: 0px 10px;
 
-    // }
     &__item {
         padding: 25px;
         margin: 0px 20px;
@@ -304,6 +303,7 @@ section.religious {
 #slider-nagigation {
     display: block;
     width: fit-content;
+<<<<<<< HEAD
     margin: 0 auto 55px;
 }
 
@@ -412,6 +412,64 @@ section.religious {
             @media (max-width: 500px) {padding: 15px 20px;}
             color: #F0EAC8;
             text-transform: uppercase;
+=======
+    margin: 0 auto;
+}
+
+.mosaic {
+    padding:145px 0px 0px;
+
+    &__container {
+        width: 100%;
+        position: relative;
+    }
+
+    &__title{@media(max-width:900px){margin-bottom: 60px !important;}}
+
+    &__container-item {
+        width: 36.29%;
+        @media(max-width:954px){
+            width: 40.29%;
+        }
+        @media(max-width:768px){
+            width: 330px;
+        }
+        @media(max-width:500px){width: 280px;}
+    }
+    &__container-item:not(:last-child){@media(max-width:768px){margin: 0 auto 90px;}}
+    .more-link{margin-top: 120px;}
+}
+.item-mosaic {  
+    position: relative;
+    border: 1px solid #785117;
+    filter: drop-shadow(2px 5px 15px rgba(0, 0, 0, 0.4));;
+    &__image {
+        padding-bottom: 92.54%;
+        @media(max-width:954px){
+            padding-bottom: 107.54%;
+            img{top: 20px; left: 26px; @media(max-width:500px){top: 12px; left: 10px;}}
+        }
+        img{top: 40px; left: 36px;}
+    }
+    &:nth-child(2){
+        @media(max-width:768px){
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        position: absolute; 
+        top:130px; 
+        right: 36px;
+    }
+    &:last-child{
+        margin-top: 171px; 
+        margin-left: 200px; 
+        @media(max-width:954px){
+            margin-top: 200px;
+        }
+        @media(max-width:768px){
+            margin: 0 auto 0px; 
+>>>>>>> a7a5b40ea37cb036b3bdbf24ea64398c845d7ea3
         }
     }
 }
