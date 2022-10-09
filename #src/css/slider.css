@@ -14,13 +14,35 @@
 }
 
 /* Слайд */
+.slick-slide {
+  margin: 0px 45px;
+}
+
 /* Слайд активный (показывается) */
 /* Слайд основной */
 /* Слайд по центру */
 /* Клонированный слайд */
 /* Стрелка */
+.slick-arrow {
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 10px;
+  color: red;
+  width: 55px;
+  height: 55px;
+  background-color: #F0EAC8;
+}
+
 /* Стрелка влево */
+.slick-arrow.slick-prev {
+  margin-right: 40px;
+}
+
 /* Стрелка вправо */
+.slick-arrow.slick-next {
+  margin-left: 40px;
+}
+
 /* Стрелка не активная */
 /* Точки (булиты) */
 /* Активная точка */

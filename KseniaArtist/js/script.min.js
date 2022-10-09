@@ -31,11 +31,34 @@ $(document).keydown(function(e) {
 
 // slider on index
 // СЛАЙДЕР
-$('.religious-slider').slick({
-    // infinite: false,
-    // centerMode: true,
-    // centerPadding: '80px',
-    slidesToShow: 3,
-    // adaptiveHeight: true,
-    // variableWidth: true,
-});
+$(document).ready(function() {
+    // СЛАЙДЕР
+    $('.religious-slider').slick({
+        slidesToShow: 3,
+        infinite: true,
+        slidesToScroll: 1,
+        arrows: true,
+        appendArrows: $('#slider-nagigation'),
+        centerMode: true,
+        centerPadding: '60px',
+        variableWidth: true,
+        speed: 900, 
+        responsive: [
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: false,
+                    slidesToScroll: 1,
+                    variableWidth: false,
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+})
