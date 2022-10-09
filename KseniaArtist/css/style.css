@@ -256,6 +256,25 @@ body.lock {
   background-color: #785117;
 }
 
+.more-link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 90px;
+  padding-bottom: 45px;
+}
+
+.more-link a {
+  display: block;
+  padding: 10px 5px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #785117;
+  font-size: 16px;
+  line-height: 8px;
+  color: #785117;
+}
+
 .header {
   z-index: 4;
   position: fixed;
@@ -466,7 +485,7 @@ body.lock {
 }
 
 section.about {
-  padding: 145px 0px 90px;
+  padding: 145px 0px 0px;
 }
 
 .about__container {
@@ -560,6 +579,50 @@ section.religious {
   padding: 145px 0px 0px;
 }
 
+.mosaic {
+  padding: 145px 0px 0px;
+}
+
+.mosaic__container {
+  width: 100%;
+  position: relative;
+}
+
+.mosaic__container-item {
+  width: 36.29%;
+}
+
+.mosaic .more-link {
+  margin-top: 120px;
+}
+
+.item-mosaic {
+  position: relative;
+  border: 1px solid #785117;
+  -webkit-filter: drop-shadow(2px 5px 15px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(2px 5px 15px rgba(0, 0, 0, 0.4));
+}
+
+.item-mosaic__image {
+  padding-bottom: 92.54%;
+}
+
+.item-mosaic__image img {
+  top: 40px;
+  left: 36px;
+}
+
+.item-mosaic:nth-child(2) {
+  position: absolute;
+  top: 130px;
+  right: 36px;
+}
+
+.item-mosaic:last-child {
+  margin-top: 171px;
+  margin-left: 200px;
+}
+
 @media (max-width: 1440px) {
   .about__container {
     display: block;
@@ -607,6 +670,32 @@ section.religious {
     width: 100%;
     padding: 0 50px;
     font-size: 36px;
+  }
+}
+
+@media (max-width: 954px) {
+  .mosaic__container-item {
+    width: 40.29%;
+  }
+
+  .item-mosaic__image {
+    padding-bottom: 107.54%;
+  }
+
+  .item-mosaic__image img {
+    top: 20px;
+    left: 26px;
+  }
+
+  .item-mosaic:last-child {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 954px) and (max-width: 500px) {
+  .item-mosaic__image img {
+    top: 12px;
+    left: 10px;
   }
 }
 
@@ -686,6 +775,10 @@ section.religious {
     padding: 0px 25px;
   }
 
+  .more-link {
+    margin-top: 60px !important;
+  }
+
   .showcase {
     padding-bottom: 60%;
   }
@@ -700,6 +793,10 @@ section.religious {
 
   .about__container-text-link {
     margin: 0 auto;
+  }
+
+  .mosaic__title {
+    margin-bottom: 60px !important;
   }
 }
 
@@ -759,6 +856,24 @@ section.religious {
 
   .about__container-text p:first-child {
     text-align: center;
+  }
+
+  .mosaic__container-item {
+    width: 330px;
+  }
+
+  .mosaic__container-item:not(:last-child) {
+    margin: 0 auto 90px;
+  }
+
+  .item-mosaic:nth-child(2) {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .item-mosaic:last-child {
+    margin: 0 auto 0px;
   }
 }
 
@@ -846,6 +961,10 @@ section.religious {
   .about__container-image-block img {
     top: -12px;
     left: -10px;
+  }
+
+  .mosaic__container-item {
+    width: 280px;
   }
 }
 
