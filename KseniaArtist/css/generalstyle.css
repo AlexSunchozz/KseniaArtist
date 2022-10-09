@@ -276,23 +276,24 @@ body.lock {
   background-color: #785117;
 }
 
-<<<<<<< HEAD
 .big-link {
   display: block;
-=======
-.more-link {
->>>>>>> a7a5b40ea37cb036b3bdbf24ea64398c845d7ea3
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-<<<<<<< HEAD
   font-family: "Literaturnaya Book";
   font-size: 16px;
   color: #785117;
   border-bottom: 1px solid #785117;
   padding: 0px 3px 15px 3px;
-=======
+}
+
+.more-link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
   margin-top: 90px;
   padding-bottom: 45px;
 }
@@ -305,7 +306,6 @@ body.lock {
   font-size: 16px;
   line-height: 8px;
   color: #785117;
->>>>>>> a7a5b40ea37cb036b3bdbf24ea64398c845d7ea3
 }
 
 @media (min-width: 769px) {

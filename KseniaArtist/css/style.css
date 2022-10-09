@@ -276,23 +276,24 @@ body.lock {
   background-color: #785117;
 }
 
-<<<<<<< HEAD
 .big-link {
   display: block;
-=======
-.more-link {
->>>>>>> a7a5b40ea37cb036b3bdbf24ea64398c845d7ea3
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-<<<<<<< HEAD
   font-family: "Literaturnaya Book";
   font-size: 16px;
   color: #785117;
   border-bottom: 1px solid #785117;
   padding: 0px 3px 15px 3px;
-=======
+}
+
+.more-link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
   margin-top: 90px;
   padding-bottom: 45px;
 }
@@ -305,7 +306,6 @@ body.lock {
   font-size: 16px;
   line-height: 8px;
   color: #785117;
->>>>>>> a7a5b40ea37cb036b3bdbf24ea64398c845d7ea3
 }
 
 .header {
@@ -635,7 +635,7 @@ section.religious {
 }
 
 .painting {
-  padding: 145px 0px;
+  padding: 145px 0px 0px;
   background-color: rgba(227, 227, 227, 0.54);
 }
 
@@ -644,7 +644,6 @@ section.religious {
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
 .painting__container-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -718,7 +717,8 @@ section.religious {
   padding: 20px 60px;
   color: #F0EAC8;
   text-transform: uppercase;
-=======
+}
+
 .mosaic {
   padding: 145px 0px 0px;
 }
@@ -761,7 +761,6 @@ section.religious {
 .item-mosaic:last-child {
   margin-top: 171px;
   margin-left: 200px;
->>>>>>> a7a5b40ea37cb036b3bdbf24ea64398c845d7ea3
 }
 
 @media (min-width: 769px) {
@@ -1241,7 +1240,6 @@ section.religious {
     height: 330px;
   }
 
-<<<<<<< HEAD
   .card {
     padding-bottom: 55%;
     width: 55%;
@@ -1253,10 +1251,10 @@ section.religious {
 
   .card-block__link a {
     padding: 15px 20px;
-=======
+  }
+
   .mosaic__container-item {
     width: 280px;
->>>>>>> a7a5b40ea37cb036b3bdbf24ea64398c845d7ea3
   }
 }
 
