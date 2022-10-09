@@ -12,6 +12,7 @@
 .slick-track{
     display: flex;
     align-items: flex-start;
+    padding: 20px 0px;
 }
 /* Слайд */
 .slick-slide{
@@ -29,7 +30,10 @@
 .slick-slide.slick-center{
     @media (min-width: 769px) {
         opacity: 1;
-        border: 2px solid #785117;
+        border: 1px solid #785117;
+    }
+    @media (min-width: 769px) {
+        box-shadow: 2px 5px 15px #785117;
     }
 }
 /* Клонированный слайд */

@@ -125,6 +125,7 @@ h6 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding: 20px 0px;
 }
 
 /* Слайд */
@@ -275,6 +276,19 @@ body.lock {
   background-color: #785117;
 }
 
+.big-link {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  font-family: "Literaturnaya Book";
+  font-size: 16px;
+  color: #785117;
+  border-bottom: 1px solid #785117;
+  padding: 0px 3px 15px 3px;
+}
+
 @media (min-width: 769px) {
   .slick-slide {
     opacity: 0.8;
@@ -282,7 +296,12 @@ body.lock {
 
   .slick-slide.slick-center {
     opacity: 1;
-    border: 2px solid #785117;
+    border: 1px solid #785117;
+  }
+
+  .slick-slide.slick-center {
+    -webkit-box-shadow: 2px 5px 15px #785117;
+            box-shadow: 2px 5px 15px #785117;
   }
 }
 

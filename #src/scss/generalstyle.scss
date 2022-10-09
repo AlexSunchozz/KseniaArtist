@@ -101,3 +101,13 @@ body.lock{overflow: hidden;}
         background-color: #785117;
     }
 }
+.big-link {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    font-family: 'Literaturnaya Book';
+    font-size: 16px;
+    color: #785117;
+    border-bottom: 1px solid #785117;
+    padding: 0px 3px 15px 3px;
+}
