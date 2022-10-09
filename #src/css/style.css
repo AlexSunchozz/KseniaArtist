@@ -99,13 +99,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Слайд */
+.slick-slide {
+  margin: 0px 45px;
+}
+
 /* Слайд активный (показывается) */
 /* Слайд основной */
 /* Слайд по центру */
 /* Клонированный слайд */
 /* Стрелка */
+.slick-arrow {
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 10px;
+  color: red;
+  width: 55px;
+  height: 55px;
+  background-color: #F0EAC8;
+}
+
 /* Стрелка влево */
+.slick-arrow.slick-prev {
+  margin-right: 40px;
+}
+
 /* Стрелка вправо */
+.slick-arrow.slick-next {
+  margin-left: 40px;
+}
+
 /* Стрелка не активная */
 /* Точки (булиты) */
 /* Активная точка */
@@ -488,20 +510,9 @@ body.lock {
   height: 100%;
 }
 .showcase__text {
-  z-index: 4;
-  font-family: "TypeyMctypeface";
-  font-size: 42px;
-  line-height: 131%;
-  text-align: center;
-  color: #F3F1D5;
-  z-index: 2;
-  padding: 0 120px;
-}
-
-.showcase__text {
   z-index: 1;
   position: absolute;
-  width: 65%;
+  width: 70%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -672,4 +683,23 @@ section.about {
 
 section.religious {
   padding: 145px 0px 0px;
+}
+
+.religious-slider {
+  margin-bottom: 30px;
+}
+
+.religious-slider__item img {
+  width: 100%;
+  height: 100%;
+  width: 370px;
+  height: 410;
+}
+
+#slider-nagigation {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
