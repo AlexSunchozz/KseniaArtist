@@ -602,6 +602,24 @@ section.religious {
   margin-bottom: 30px;
 }
 
+.religious-slider__item {
+  padding: 25px;
+  margin: 0px 20px;
+}
+
+.religious-slider__img img {
+  width: 400px;
+  height: 430px;
+}
+
+#slider-nagigation {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
 .mosaic {
   padding: 145px 0px 0px;
 }
@@ -644,24 +662,6 @@ section.religious {
 .item-mosaic:last-child {
   margin-top: 171px;
   margin-left: 200px;
-}
-
-.item-mosaic__item {
-  padding: 25px;
-  margin: 0px 20px;
-}
-
-.item-mosaic__img img {
-  width: 400px;
-  height: 430px;
-}
-
-#slider-nagigation {
-  display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto;
 }
 
 @media (min-width: 769px) {
@@ -712,12 +712,12 @@ section.religious {
     font-size: 20px;
   }
 
-  .item-mosaic__item {
+  .religious-slider__item {
     padding: 20px;
     margin: 0px 15px;
   }
 
-  .item-mosaic__img img {
+  .religious-slider__img img {
     width: 330px;
     height: 410px;
   }
@@ -736,7 +736,7 @@ section.religious {
 }
 
 @media (max-width: 1000px) {
-  .item-mosaic__item {
+  .religious-slider__item {
     margin: 0px;
   }
 }
@@ -863,23 +863,23 @@ section.religious {
     margin: 0 auto;
   }
 
-  .mosaic__title {
-    margin-bottom: 60px !important;
-  }
-
-  .item-mosaic__img img {
+  .religious-slider__img img {
     width: 290px;
     height: 380px;
+  }
+
+  .mosaic__title {
+    margin-bottom: 60px !important;
   }
 }
 
 @media (max-width: 769px) {
-  .item-mosaic__item {
+  .religious-slider__item {
     padding: 5px;
     margin: 0px 0px;
   }
 
-  .item-mosaic__img {
+  .religious-slider__img {
     width: 100%;
     height: 100%;
     display: -webkit-box;
@@ -1011,7 +1011,7 @@ section.religious {
     top: 60px;
   }
 
-  .item-mosaic__img img {
+  .religious-slider__img img {
     width: 230px;
     height: 300px;
   }
@@ -1065,17 +1065,17 @@ section.religious {
     left: -10px;
   }
 
-  .mosaic__container-item {
-    width: 280px;
-  }
-
-  .item-mosaic__item {
+  .religious-slider__item {
     margin: 0px 40px;
   }
 
-  .item-mosaic__img img {
+  .religious-slider__img img {
     width: 280px;
     height: 330px;
+  }
+
+  .mosaic__container-item {
+    width: 280px;
   }
 }
 
@@ -1103,7 +1103,7 @@ section.religious {
 }
 
 @media (max-width: 400px) {
-  .item-mosaic__img img {
+  .religious-slider__img img {
     width: 290px;
     height: 320px;
   }
