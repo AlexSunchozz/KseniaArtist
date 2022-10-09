@@ -1,5 +1,5 @@
 .header {
-  z-index: 2;
+  z-index: 4;
   position: fixed;
   left: 0;
   top: 0;
@@ -34,9 +34,14 @@
 }
 
 .menu.active .menu__list {
+  overflow: auto;
   border-top: 1px solid #d5d3b1;
   border-left: 1px solid #d5d3b1;
   border-bottom: 1px solid #d5d3b1;
+}
+
+.menu.active .menu__list a {
+  color: #785117;
 }
 
 .menu {
@@ -60,20 +65,23 @@
 }
 
 .menu__list-item a {
+  display: block;
   color: rgba(120, 81, 23, 0.7);
-  -webkit-transition: all ease 0.6s;
-  transition: all ease 0.6s;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
   font-family: "Typey McTypeface";
   font-size: 20px;
   line-height: 115%;
 }
 
 .menu__list-item a:hover {
+  display: block;
   color: #785117;
-  text-shadow: 5px 6px 4px rgba(120, 81, 23, 0.54);
-  font-size: 21px;
-  -webkit-transition: all ease 0.6s;
-  transition: all ease 0.6s;
+  text-shadow: 5px 5px 4px rgba(120, 81, 23, 0.54);
+  -webkit-transform: translate(-2px, -2px);
+          transform: translate(-2px, -2px);
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
 }
 
 .header-burger {
@@ -194,11 +202,11 @@
 
   .menu__list-item:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 40px;
   }
 
   .menu__list-item {
     padding: 0 15px 0 40px;
+    margin-bottom: 50px;
   }
 
   .menu__list-item a {
@@ -207,6 +215,29 @@
 
   .header-burger {
     display: block;
+  }
+}
+
+@media (max-width: 920px) and (max-width: 768px) {
+  .menu {
+    padding: 65px 0 0 0;
+  }
+}
+
+@media (max-width: 920px) and (max-width: 600px) {
+  .menu {
+    padding: 60px 0 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__logo {
+    height: 45px;
+    width: 110px;
+  }
+
+  .header-container {
+    min-height: 60px;
   }
 }
 
@@ -223,23 +254,6 @@
 }
 
 @media (max-width: 500px) {
-  .header__logo {
-    height: 45px;
-    width: 110px;
-  }
-
-  .header-container {
-    min-height: 60px;
-  }
-
-  .menu {
-    padding: 60px 0 0 0;
-  }
-
-  .menu__list-item a {
-    font-size: 22px;
-  }
-
   .header-burger {
     width: 35px;
   }
@@ -256,5 +270,11 @@
 @media (max-width: 460px) {
   .menu {
     width: 100%;
+  }
+}
+
+@media (max-width: 330px) {
+  .menu__list-item a {
+    font-size: 22px;
   }
 }
