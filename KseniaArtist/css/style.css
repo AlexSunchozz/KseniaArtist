@@ -699,7 +699,7 @@ section.religious {
 }
 
 .religious-slider {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .religious-slider__item {
@@ -708,16 +708,8 @@ section.religious {
 }
 
 .religious-slider__img img {
-  width: 380px;
-  height: 480px;
-}
-
-#slider-nagigation {
-  display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto 55px;
+  width: 400px;
+  height: 450px;
 }
 
 .nav {
@@ -786,6 +778,8 @@ section.religious {
 }
 
 .card {
+  -webkit-box-shadow: 14px 14px 47px #a0a19a, -14px -14px 47px #ffffff;
+          box-shadow: 14px 14px 47px #a0a19a, -14px -14px 47px #ffffff;
   position: relative;
   top: 0px;
   left: 0px;
@@ -835,6 +829,15 @@ section.religious {
   padding: 20px 60px;
   color: #F0EAC8;
   text-transform: uppercase;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+
+.card-block__link a:hover {
+  -webkit-transform: scale(1.1, 1);
+          transform: scale(1.1, 1);
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
 }
 
 .mosaic,
@@ -901,8 +904,8 @@ section.religious {
   }
 
   .slick-slide.slick-center {
-    -webkit-box-shadow: 2px 5px 15px #785117;
-            box-shadow: 2px 5px 15px #785117;
+    -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+            box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
   }
 }
 
