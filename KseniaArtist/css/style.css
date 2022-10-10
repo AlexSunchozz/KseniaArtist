@@ -1394,6 +1394,10 @@ section.religious .more-link {
 }
 
 @media (max-width: 600px) {
+  .slick-track {
+    padding: 0 0 20px 0;
+  }
+
   .container {
     padding: 5px 20px;
   }
@@ -1420,6 +1424,10 @@ section.religious .more-link {
 
   .showcase-block {
     top: 60px;
+  }
+
+  .religious-slider {
+    margin-top: -20px;
   }
 
   .religious-slider__img img {
@@ -1560,7 +1568,7 @@ section.religious .more-link {
   }
 
   .religious-slider__item {
-    margin: 0px 40px;
+    margin: 0px 45px;
   }
 
   .religious-slider__img img {
