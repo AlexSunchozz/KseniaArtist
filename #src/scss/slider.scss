@@ -19,23 +19,29 @@
 .slick-slide{
     @media (min-width: 769px) {
         opacity: .8;
+        transition: ease all 2s;   
+        border: none;    
     }
 }
 /* Слайд активный (показывается) */
 .slick-slide.slick-active{
 }
+.slick-active.slick-center {
+    @media (min-width: 769px) {
+        opacity: 1;
+        border: 1px solid #785117;
+        transition: ease all 2s;   
+    }
+    @media (min-width: 769px) {
+        box-shadow: 2px 3px 8px rgba(120, 81, 23, 0.4);
+    }
+}
+
 /* Слайд основной */
 .slick-slide.slick-current{
 }
 /* Слайд по центру */
 .slick-slide.slick-center{
-    @media (min-width: 769px) {
-        opacity: 1;
-        border: 1px solid #785117;
-    }
-    @media (min-width: 769px) {
-        box-shadow: 2px 3px 8px rgba(120, 81, 23, 0.4);
-    }
 }
 /* Клонированный слайд */
 .slick-slide.slick-cloned{

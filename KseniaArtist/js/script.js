@@ -73,9 +73,3 @@ cards.forEach(card => {
         card.querySelector('.card-block__a').classList.remove('active');      
     })
 })
-// const prev = document.querySelector('.slick-prev'),
-//       prevBlock = document.querySelector('.nav-prev');
-// console.log(prev);
-// console.log(prevBlock);
-// prevBlock.appendChild(prev);
-// prevBlock.insertAdjacentHTML("afterbegin", '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>');

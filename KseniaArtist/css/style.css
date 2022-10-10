@@ -900,14 +900,19 @@ section.religious .more-link {
 @media (min-width: 769px) {
   .slick-slide {
     opacity: 0.8;
+    -webkit-transition: ease all 2s;
+    transition: ease all 2s;
+    border: none;
   }
 
-  .slick-slide.slick-center {
+  .slick-active.slick-center {
     opacity: 1;
     border: 1px solid #785117;
+    -webkit-transition: ease all 2s;
+    transition: ease all 2s;
   }
 
-  .slick-slide.slick-center {
+  .slick-active.slick-center {
     -webkit-box-shadow: 2px 3px 8px rgba(120, 81, 23, 0.4);
             box-shadow: 2px 3px 8px rgba(120, 81, 23, 0.4);
   }
