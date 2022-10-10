@@ -38,7 +38,7 @@ $(document).ready(function() {
         infinite: true,
         slidesToScroll: 1,
         arrows: true,
-        appendArrows: $('#slider-nagigation'),
+        appendArrows: $('.nav'),
         centerMode: true,
         centerPadding: '60px',
         variableWidth: true,
@@ -62,3 +62,10 @@ $(document).ready(function() {
         ]
     });
 })
+
+const prev = document.querySelector('.slick-prev'),
+      prevBlock = document.querySelector('.nav-prev');
+console.log(prev);
+console.log(prevBlock);
+// prevBlock.appendChild(prev);
+// prevBlock.insertAdjacentHTML("afterbegin", '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>');

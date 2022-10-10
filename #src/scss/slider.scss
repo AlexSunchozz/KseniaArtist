@@ -42,20 +42,22 @@
 /* Стрелка */
 .slick-arrow{
     display: inline-block;
+    position: absolute;
     font-size: 0;
     width: 40px;
-    height: 25px;
+    height: 100%;
+    z-index: 4;
 }
 /* Стрелка влево */
 .slick-arrow.slick-prev{
-    margin-right: 40px;
-    background: url('../img/slider/prevArr.svg') 5px 100%/contain no-repeat;
+    left: 0;
+    background: url('../img/slider/prevArr.svg') 9px 14px/contain no-repeat;
 }
 /* Стрелка вправо */
 .slick-arrow.slick-next{
-    margin-left: 40px;
+    right: 0;
     transform: rotate(180deg);
-    background: url('../img/slider/prevArr.svg') 5px 100%/contain no-repeat;
+    background: url('../img/slider/prevArr.svg') 9px 14px/contain no-repeat;
 }
 /* Стрелка не активная */
 .slick-arrow.slick-disabled{}
