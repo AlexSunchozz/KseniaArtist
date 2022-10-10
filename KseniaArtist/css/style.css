@@ -1320,6 +1320,13 @@ section.religious .more-link {
     text-align: center;
   }
 
+  .religious-slider__img img {
+    -webkit-filter: drop-shadow(2px 3px 3px rgba(120, 81, 23, 0.7));
+            filter: drop-shadow(2px 3px 3px rgba(120, 81, 23, 0.7));
+    width: 310px;
+    height: 360px;
+  }
+
   .painting__container-row-item {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 45.7%;
@@ -1558,7 +1565,7 @@ section.religious .more-link {
 
   .religious-slider__img img {
     width: 280px;
-    height: 330px;
+    height: 340px;
   }
 
   .card {
@@ -1619,7 +1626,7 @@ section.religious .more-link {
 @media (max-width: 400px) {
   .religious-slider__img img {
     width: 290px;
-    height: 320px;
+    height: 360px;
   }
 }
 

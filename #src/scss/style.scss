@@ -188,17 +188,22 @@ section.religious .more-link{
                 width: 260px;
                 height: 370px;
             }
+            @media(max-width:768px){
+                filter: drop-shadow(2px 3px 3px rgba(120, 81, 23, 0.7));
+                width: 310px;
+                height: 360px;
+            }
             @media (max-width: 600px) {
                 width: 230px;
                 height: 300px;
             }
             @media (max-width: 500px) {
                 width: 280px;
-                height: 330px;
+                height: 340px;
             }
             @media (max-width: 400px) {
                 width: 290px;
-                height: 320px;
+                height: 360px;
             }
         }
     }
