@@ -338,8 +338,9 @@ body.lock {
   }
 
   .title h2 {
-    font-size: 36px;
+    font-size: 32px;
     padding: 0px 25px;
+    text-align: center;
   }
 
   .more-link {
@@ -351,6 +352,16 @@ body.lock {
   .main-die.active {
     top: 65px;
   }
+
+  .title h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 630px) {
+  .title h2 {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -360,10 +371,6 @@ body.lock {
 
   .main-die.active {
     top: 60px;
-  }
-
-  .title h2 {
-    font-size: 32px;
   }
 
   .title span {
@@ -378,11 +385,6 @@ body.lock {
 
   .title {
     margin-bottom: 30px;
-  }
-
-  .title h2 {
-    font-size: 28px;
-    padding: 0px 15px;
   }
 
   .title span {
