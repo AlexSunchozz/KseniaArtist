@@ -782,8 +782,8 @@ section.religious .more-link {
 }
 
 .card {
-  -webkit-box-shadow: 14px 14px 47px #a0a19a, -14px -14px 47px #ffffff;
-          box-shadow: 14px 14px 47px #a0a19a, -14px -14px 47px #ffffff;
+  -webkit-box-shadow: 3px 5px 14px #a0a19a, -14px -14px 47px #ffffff;
+          box-shadow: 3px 5px 14px #a0a19a, -14px -14px 47px #ffffff;
   position: relative;
   top: 0px;
   left: 0px;
