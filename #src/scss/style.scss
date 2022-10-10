@@ -73,7 +73,9 @@
 
 //ОБ АВТОРЕ
 section.about {
-    padding: 145px 0px 0px;
+    padding: 220px 0px 0px;
+    @media (max-width: 1050px){padding: 160px 0 0 0;}
+    @media (max-width: 768px){padding: 130px 0 0 0;}
 }
 .about {
 
@@ -97,7 +99,7 @@ section.about {
             border: 1px solid #785117;
             border-radius: 40px;
 
-            img{filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));border-radius: 40px; top: -24px; left: -19px;@media(max-width:500px){top: -12px; left: -10px;}}
+            img{filter: drop-shadow(0px 4px 10px rgba(120, 81, 23, 0.4));border-radius: 40px; top: -24px; left: -19px;@media(max-width:500px){top: -13px; left: -10px;}}
         }
         
         margin-right: 130px;
@@ -147,8 +149,8 @@ section.about {
 }
 
 //РЕЛИГИОЗНОЕ ИСКУССТВО
-section.religious {
-    padding: 145px 0px 0px;
+section.religious .more-link{
+    padding-bottom: 0px;
 }
 .religious-slider {
     margin-bottom: 20px;
@@ -263,6 +265,7 @@ section.religious {
 
     &__container-row-item {
         flex: 0 1 42.7%;
+        @media(max-width:768px){flex: 0 1 45.7%;}
         @media (max-width: 600px) {
             &:not(:last-child) {
                 margin-bottom: 30px;
@@ -271,15 +274,14 @@ section.religious {
     }
 }
 .card {
-    box-shadow:  14px 14px 47px #a0a19a,
+    box-shadow:  3px 5px 13px #a0a19a,
              -14px -14px 47px #ffffff;
     position: relative;
     top: 0px;
     left: 0px;
     padding-bottom: 92.4%;
-    @media (max-width: 900px) {padding-bottom: 96%;}
-    @media (max-width: 768px) {padding-bottom: 100%;}
-    @media (max-width: 650px) {padding-bottom: 108%;}
+    @media (max-width: 900px) {padding-bottom: 108%;}
+    // @media (max-width: 650px) {padding-bottom: 108%;}
     @media (max-width: 600px) {padding-bottom: 352.3px; width: 328px; margin: 0 auto;}
     @media (max-width: 500px) {padding-bottom: 298.5px; width: 280px;}
 }
@@ -321,7 +323,7 @@ section.religious {
             display: block;
             background-color: rgba(226, 201, 136, .6);;
             padding: 20px 60px;
-            @media (max-width: 1100px) {padding: 20px 40px;}
+            @media (max-width: 1100px) {padding: 10px 30px;}
             @media (max-width: 769px) {padding: 5px 30px; font-size:24px}
             @media (max-width: 600px) {padding: 12px 34px; font-size:24px}
             @media (max-width: 500px) {padding: 6px 30px; font-size: 22px;}
@@ -346,7 +348,7 @@ section.religious {
         position: relative;
     }
 
-    &__title{@media(max-width:900px){margin-bottom: 60px !important;}}
+    &__title{@media(max-width:900px){margin-bottom: 60px !important;};@media(max-width:500px){margin-bottom: 40px !important;}}
 
     &__container-item {
         width: 36.29%;
@@ -354,30 +356,51 @@ section.religious {
             width: 40.29%;
         }
         @media(max-width:768px){
-            width: 330px;
+            width: 45.7%;;
         }
+        @media(max-width: 768px){width: 328px;}
         @media(max-width:500px){width: 280px;}
     }
-    &__container-item:not(:last-child){@media(max-width:768px){margin: 0 auto 90px;}}
+    &__container-item:not(:last-child){
+        @media(max-width:768px){margin: 0 0 90px 0;};
+        @media(max-width:600px){margin: 0 auto 90px;}
+    }
     .more-link{margin-top: 120px;}
 }
 .item-mosaic, .item-dpi {  
     position: relative;
     border: 1px solid #785117;
-    filter: drop-shadow(2px 5px 15px rgba(0, 0, 0, 0.4));;
+    filter: drop-shadow(2px 5px 5px rgba(120, 81, 23, 0.4));
     &__image {
         padding-bottom: 92.54%;
         @media(max-width:954px){
-            padding-bottom: 107.54%;
-            img{top: 20px; left: 26px; @media(max-width:500px){top: 12px; left: 10px;}}
+            padding-bottom: 115.54%;
+            img{top: 20px; left: 26px;}
         }
+
+        @media(max-width:768px){
+            padding-bottom: 108.69%;
+        }
+        @media(max-width:600px){
+            padding-bottom: 352.3px;
+        }
+        @media(max-width:500px){
+            padding-bottom: 298.5px;
+            img{top: 13px; left: 10px;}
+        }
+
         img{top: 40px; left: 36px;}
     }
     &:nth-child(2){
         @media(max-width:768px){
             position: relative;
             top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        @media(max-width:600px){
             left: 0;
+            transform: translateX(0);
         }
         position: absolute; 
         top:130px; 
@@ -390,7 +413,12 @@ section.religious {
             margin-top: 200px;
         }
         @media(max-width:768px){
-            margin: 0 auto 0px; 
+            margin-top: 0px;
+            margin-left: 50%;
+        }
+        @media(max-width:600px){
+            margin-left: 0%;
+            margin: 0 auto 0;
         }
     }
 }

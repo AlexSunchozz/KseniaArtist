@@ -81,7 +81,7 @@ body.lock{overflow: hidden;}
     align-items: center;
     margin-bottom: 60px;
     @media (max-width: 900px) { margin-bottom: 40px; }
-    @media (max-width: 500px) { margin-bottom: 30px; }
+    @media (max-width: 500px) { margin-bottom: 50px; }
     h2 {
         padding: 0px 30px;
         color: #785117;
@@ -126,4 +126,10 @@ body.lock{overflow: hidden;}
     margin-top: 90px;
     @media(max-width:900px){margin-top: 60px !important;}
     padding-bottom: 45px;
+}
+section:not(.about){
+    padding: 130px 0px 0px 0px;
+    @media(max-width:1050px){padding: 100px 0 0 0;}
+    @media (max-width: 768px){padding: 90px 0 0 0;}
+    @media (max-width: 600px){padding: 70px 0 0 0;}
 }

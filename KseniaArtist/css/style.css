@@ -310,6 +310,10 @@ body.lock {
   color: #785117;
 }
 
+section:not(.about) {
+  padding: 130px 0px 0px 0px;
+}
+
 .header {
   z-index: 4;
   position: fixed;
@@ -604,7 +608,7 @@ body.lock {
 }
 
 section.about {
-  padding: 145px 0px 0px;
+  padding: 220px 0px 0px;
 }
 
 .about__container {
@@ -632,8 +636,8 @@ section.about {
 }
 
 .about__container-image-block img {
-  -webkit-filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+  -webkit-filter: drop-shadow(0px 4px 10px rgba(120, 81, 23, 0.4));
+          filter: drop-shadow(0px 4px 10px rgba(120, 81, 23, 0.4));
   border-radius: 40px;
   top: -24px;
   left: -19px;
@@ -694,8 +698,8 @@ section.about {
           box-shadow: 3px 8px 16px rgba(120, 81, 23, 0.25);
 }
 
-section.religious {
-  padding: 145px 0px 0px;
+section.religious .more-link {
+  padding-bottom: 0px;
 }
 
 .religious-slider {
@@ -778,8 +782,8 @@ section.religious {
 }
 
 .card {
-  -webkit-box-shadow: 14px 14px 47px #a0a19a, -14px -14px 47px #ffffff;
-          box-shadow: 14px 14px 47px #a0a19a, -14px -14px 47px #ffffff;
+  -webkit-box-shadow: 3px 5px 13px #a0a19a, -14px -14px 47px #ffffff;
+          box-shadow: 3px 5px 13px #a0a19a, -14px -14px 47px #ffffff;
   position: relative;
   top: 0px;
   left: 0px;
@@ -865,8 +869,8 @@ section.religious {
 .item-dpi {
   position: relative;
   border: 1px solid #785117;
-  -webkit-filter: drop-shadow(2px 5px 15px rgba(0, 0, 0, 0.4));
-          filter: drop-shadow(2px 5px 15px rgba(0, 0, 0, 0.4));
+  -webkit-filter: drop-shadow(2px 5px 5px rgba(120, 81, 23, 0.4));
+          filter: drop-shadow(2px 5px 5px rgba(120, 81, 23, 0.4));
 }
 
 .item-mosaic__image,
@@ -904,8 +908,8 @@ section.religious {
   }
 
   .slick-slide.slick-center {
-    -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
-            box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 2px 3px 8px rgba(120, 81, 23, 0.4);
+            box-shadow: 2px 3px 8px rgba(120, 81, 23, 0.4);
   }
 }
 
@@ -997,7 +1001,17 @@ section.religious {
   }
 
   .card-block__link a {
-    padding: 20px 40px;
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 1050px) {
+  section:not(.about) {
+    padding: 100px 0 0 0;
+  }
+
+  section.about {
+    padding: 160px 0 0 0;
   }
 }
 
@@ -1015,7 +1029,7 @@ section.religious {
 
   .item-mosaic__image,
   .item-dpi__image {
-    padding-bottom: 107.54%;
+    padding-bottom: 115.54%;
   }
 
   .item-mosaic__image img,
@@ -1027,14 +1041,6 @@ section.religious {
   .item-mosaic:last-child,
   .item-dpi:last-child {
     margin-top: 200px;
-  }
-}
-
-@media (max-width: 954px) and (max-width: 500px) {
-  .item-mosaic__image img,
-  .item-dpi__image img {
-    top: 12px;
-    left: 10px;
   }
 }
 
@@ -1151,7 +1157,7 @@ section.religious {
   }
 
   .card {
-    padding-bottom: 96%;
+    padding-bottom: 108%;
   }
 
   .mosaic__title,
@@ -1237,6 +1243,10 @@ section.religious {
     font-size: 25px;
   }
 
+  section:not(.about) {
+    padding: 90px 0 0 0;
+  }
+
   .header__logo {
     height: 45px;
     width: 110px;
@@ -1274,6 +1284,10 @@ section.religious {
     font-size: 28px;
   }
 
+  section.about {
+    padding: 130px 0 0 0;
+  }
+
   .about__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1306,30 +1320,45 @@ section.religious {
     text-align: center;
   }
 
-  .card {
-    padding-bottom: 100%;
+  .painting__container-row-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45.7%;
+            flex: 0 1 45.7%;
   }
 
   .mosaic__container-item,
   .dpi__container-item {
-    width: 330px;
+    width: 45.7%;
+  }
+
+  .mosaic__container-item,
+  .dpi__container-item {
+    width: 328px;
   }
 
   .mosaic__container-item:not(:last-child),
   .dpi__container-item:not(:last-child) {
-    margin: 0 auto 90px;
+    margin: 0 0 90px 0;
+  }
+
+  .item-mosaic__image,
+  .item-dpi__image {
+    padding-bottom: 108.69%;
   }
 
   .item-mosaic:nth-child(2),
   .item-dpi:nth-child(2) {
     position: relative;
     top: 0;
-    left: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 
   .item-mosaic:last-child,
   .item-dpi:last-child {
-    margin: 0 auto 0px;
+    margin-top: 0px;
+    margin-left: 50%;
   }
 }
 
@@ -1342,10 +1371,6 @@ section.religious {
 @media (max-width: 650px) {
   .menu {
     width: 70%;
-  }
-
-  .card {
-    padding-bottom: 108%;
   }
 }
 
@@ -1372,6 +1397,10 @@ section.religious {
 
   .title span {
     width: 60px;
+  }
+
+  section:not(.about) {
+    padding: 70px 0 0 0;
   }
 
   .header-container {
@@ -1420,6 +1449,29 @@ section.religious {
     padding: 12px 34px;
     font-size: 24px;
   }
+
+  .mosaic__container-item:not(:last-child),
+  .dpi__container-item:not(:last-child) {
+    margin: 0 auto 90px;
+  }
+
+  .item-mosaic__image,
+  .item-dpi__image {
+    padding-bottom: 352.3px;
+  }
+
+  .item-mosaic:nth-child(2),
+  .item-dpi:nth-child(2) {
+    left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  .item-mosaic:last-child,
+  .item-dpi:last-child {
+    margin-left: 0%;
+    margin: 0 auto 0;
+  }
 }
 
 @media (max-width: 520px) {
@@ -1463,7 +1515,7 @@ section.religious {
   }
 
   .title {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .title span {
@@ -1496,7 +1548,7 @@ section.religious {
   }
 
   .about__container-image-block img {
-    top: -12px;
+    top: -13px;
     left: -10px;
   }
 
@@ -1519,9 +1571,25 @@ section.religious {
     font-size: 22px;
   }
 
+  .mosaic__title,
+  .dpi__title {
+    margin-bottom: 40px !important;
+  }
+
   .mosaic__container-item,
   .dpi__container-item {
     width: 280px;
+  }
+
+  .item-mosaic__image,
+  .item-dpi__image {
+    padding-bottom: 298.5px;
+  }
+
+  .item-mosaic__image img,
+  .item-dpi__image img {
+    top: 13px;
+    left: 10px;
   }
 }
 
