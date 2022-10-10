@@ -1113,7 +1113,7 @@ section.religious {
   }
 
   .card {
-    padding-bottom: 90%;
+    padding-bottom: 96%;
   }
 
   .mosaic__title,
@@ -1184,12 +1184,9 @@ section.religious {
     margin-bottom: 60px;
   }
 
-  .card-block__link {
-    font-size: 28px;
-  }
-
   .card-block__link a {
-    padding: 15px 25px;
+    padding: 5px 30px;
+    font-size: 24px;
   }
 }
 
@@ -1267,6 +1264,10 @@ section.religious {
     text-align: center;
   }
 
+  .card {
+    padding-bottom: 100%;
+  }
+
   .mosaic__container-item,
   .dpi__container-item {
     width: 330px;
@@ -1299,6 +1300,10 @@ section.religious {
 @media (max-width: 650px) {
   .menu {
     width: 70%;
+  }
+
+  .card {
+    padding-bottom: 108%;
   }
 }
 
@@ -1362,9 +1367,14 @@ section.religious {
   }
 
   .card {
-    padding-bottom: 60%;
-    width: 60%;
+    padding-bottom: 352.3px;
+    width: 328px;
     margin: 0 auto;
+  }
+
+  .card-block__link a {
+    padding: 12px 34px;
+    font-size: 24px;
   }
 }
 
@@ -1461,16 +1471,13 @@ section.religious {
   }
 
   .card {
-    padding-bottom: 55%;
-    width: 55%;
-  }
-
-  .card-block__link {
-    font-size: 24px;
+    padding-bottom: 298.5px;
+    width: 280px;
   }
 
   .card-block__link a {
-    padding: 15px 20px;
+    padding: 6px 30px;
+    font-size: 22px;
   }
 
   .mosaic__container-item,
@@ -1506,11 +1513,6 @@ section.religious {
   .religious-slider__img img {
     width: 290px;
     height: 320px;
-  }
-
-  .card {
-    padding-bottom: 70%;
-    width: 80%;
   }
 }
 
