@@ -782,8 +782,8 @@ section.religious .more-link {
 }
 
 .card {
-  -webkit-box-shadow: 3px 5px 13px #a0a19a, -14px -14px 47px #ffffff;
-          box-shadow: 3px 5px 13px #a0a19a, -14px -14px 47px #ffffff;
+  -webkit-box-shadow: 14px 14px 47px #a0a19a, -14px -14px 47px #ffffff;
+          box-shadow: 14px 14px 47px #a0a19a, -14px -14px 47px #ffffff;
   position: relative;
   top: 0px;
   left: 0px;
@@ -827,7 +827,7 @@ section.religious .more-link {
   border: #E2C988 1px solid;
 }
 
-.card-block__link a {
+.card-block__link p.card-block__a {
   display: block;
   background-color: rgba(226, 201, 136, 0.6);
   padding: 20px 60px;
@@ -837,7 +837,7 @@ section.religious .more-link {
   transition: all ease 0.6s;
 }
 
-.card-block__link a:hover {
+.card-block__link p.card-block__a.active {
   -webkit-transform: scale(1.1, 1);
           transform: scale(1.1, 1);
   -webkit-transition: all ease 0.6s;
@@ -1000,7 +1000,7 @@ section.religious .more-link {
     font-size: 32px;
   }
 
-  .card-block__link a {
+  .card-block__link p.card-block__a {
     padding: 10px 30px;
   }
 }
@@ -1228,7 +1228,7 @@ section.religious .more-link {
     margin-bottom: 60px;
   }
 
-  .card-block__link a {
+  .card-block__link p.card-block__a {
     padding: 5px 30px;
     font-size: 24px;
   }
@@ -1445,7 +1445,7 @@ section.religious .more-link {
     margin: 0 auto;
   }
 
-  .card-block__link a {
+  .card-block__link p.card-block__a {
     padding: 12px 34px;
     font-size: 24px;
   }
@@ -1566,7 +1566,7 @@ section.religious .more-link {
     width: 280px;
   }
 
-  .card-block__link a {
+  .card-block__link p.card-block__a {
     padding: 6px 30px;
     font-size: 22px;
   }
