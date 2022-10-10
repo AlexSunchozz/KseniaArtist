@@ -823,7 +823,7 @@ section.religious {
   border: #E2C988 1px solid;
 }
 
-.card-block__link a {
+.card-block__link p.card-block__a {
   display: block;
   background-color: rgba(226, 201, 136, 0.6);
   padding: 20px 60px;
@@ -833,7 +833,7 @@ section.religious {
   transition: all ease 0.6s;
 }
 
-.card-block__link a:hover {
+.card-block__link p.card-block__a.active {
   -webkit-transform: scale(1.1, 1);
           transform: scale(1.1, 1);
   -webkit-transition: all ease 0.6s;
@@ -996,7 +996,7 @@ section.religious {
     font-size: 32px;
   }
 
-  .card-block__link a {
+  .card-block__link p.card-block__a {
     padding: 20px 40px;
   }
 }
@@ -1222,7 +1222,7 @@ section.religious {
     margin-bottom: 60px;
   }
 
-  .card-block__link a {
+  .card-block__link p.card-block__a {
     padding: 5px 30px;
     font-size: 24px;
   }
@@ -1416,7 +1416,7 @@ section.religious {
     margin: 0 auto;
   }
 
-  .card-block__link a {
+  .card-block__link p.card-block__a {
     padding: 12px 34px;
     font-size: 24px;
   }
@@ -1514,7 +1514,7 @@ section.religious {
     width: 280px;
   }
 
-  .card-block__link a {
+  .card-block__link p.card-block__a {
     padding: 6px 30px;
     font-size: 22px;
   }

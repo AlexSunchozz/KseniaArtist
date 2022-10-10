@@ -271,6 +271,8 @@ section.religious {
     }
 }
 .card {
+    // display: block;
+    // width: 100%;
     box-shadow:  14px 14px 47px #a0a19a,
              -14px -14px 47px #ffffff;
     position: relative;
@@ -317,7 +319,7 @@ section.religious {
         text-align: center;
         padding: 7px;
         border: #E2C988 1px solid;
-        a {
+        p.card-block__a {
             display: block;
             background-color: rgba(226, 201, 136, .6);;
             padding: 20px 60px;
@@ -328,10 +330,10 @@ section.religious {
             color: #F0EAC8;
             text-transform: uppercase;
             transition: all ease 0.6s;
-        }
-        a:hover{
-            transform: scale(1.1, 1);
-            transition: all ease 0.6s;
+            &.active {
+                transform: scale(1.1, 1);
+                transition: all ease 0.6s;
+            }
         }
     }
     // margin: 0 auto;

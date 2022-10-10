@@ -29,7 +29,6 @@ $(document).keydown(function(e) {
 })
 //
 
-// slider on index
 // СЛАЙДЕР
 $(document).ready(function() {
     // СЛАЙДЕР
@@ -63,9 +62,20 @@ $(document).ready(function() {
     });
 })
 
-const prev = document.querySelector('.slick-prev'),
-      prevBlock = document.querySelector('.nav-prev');
-console.log(prev);
-console.log(prevBlock);
+const cards = document.querySelectorAll('.painting__container-row-item');
+cards.forEach(card => {
+    card.addEventListener('mouseover', () => {
+        console.log(card.querySelector('.card-block__a'));
+        card.querySelector('.card-block__a').classList.add('active');      
+    })
+    card.addEventListener('mouseout', () => {
+        console.log(card.querySelector('.card-block__a'));
+        card.querySelector('.card-block__a').classList.remove('active');      
+    })
+})
+// const prev = document.querySelector('.slick-prev'),
+//       prevBlock = document.querySelector('.nav-prev');
+// console.log(prev);
+// console.log(prevBlock);
 // prevBlock.appendChild(prev);
 // prevBlock.insertAdjacentHTML("afterbegin", '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"></button>');
