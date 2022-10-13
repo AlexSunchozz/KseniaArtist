@@ -1,32 +1,23 @@
-/* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
 /* Ограничивающая оболочка */
-.slick-list {
+.religious-slider .slick-list {
     overflow: hidden;
 }
 /* Лента слайдов */
-.slick-track{
+.religious-slider .slick-track{
     display: flex;
     align-items: flex-start;
     padding: 20px 0px;
     @media(max-width:600px){padding: 0 0 20px 0;}
 }
 /* Слайд */
-.slick-slide{
+.religious-slider .slick-slide{
     @media (min-width: 769px) {
         opacity: .8;
         transition: ease all 2s;   
         border: none;    
     }
 }
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{
-}
-.slick-active.slick-center {
+.religious-slider .slick-active.slick-center {
     @media (min-width: 769px) {
         opacity: 1;
         border: 1px solid #785117;
@@ -36,18 +27,8 @@
         box-shadow: 2px 3px 8px rgba(120, 81, 23, 0.4);
     }
 }
-
-/* Слайд основной */
-.slick-slide.slick-current{
-}
-/* Слайд по центру */
-.slick-slide.slick-center{
-}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{
-}
 /* Стрелка */
-.slick-arrow{
+.nav .slick-arrow{
     display: inline-block;
     position: absolute;
     font-size: 0;
@@ -56,22 +37,96 @@
     z-index: 4;
 }
 /* Стрелка влево */
-.slick-arrow.slick-prev{
+.nav .slick-arrow.slick-prev{
     left: 0;
     background: url('../img/slider/prevArr.svg') 9px 14px/contain no-repeat;
 }
 /* Стрелка вправо */
-.slick-arrow.slick-next{
+.nav .slick-arrow.slick-next{
     right: 0;
     transform: rotate(180deg);
     background: url('../img/slider/prevArr.svg') 9px 14px/contain no-repeat;
 }
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-/* Точки (булиты) */
-.slick-dots{}
-.slick-dots li{}
-/* Активная точка */
-.slick-dots li.slick-active{}
-/* Элемент точки */
-.slick-dots li button{}
+
+// ---------------------------- СЛАДЕР ЖИВОПИСИ ----------------------------
+.painting__block-mainslider .slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.painting__block-mainslider .slick-track{
+    display: flex;
+    align-items: flex-start;
+    padding: 0px 0px 20px 0px;
+    // @media(max-width:600px){padding: 0 0 20px 0;}
+}
+@media (max-width: 768px) {
+    .painting__block-mainslider .slick-arrow {
+        position: absolute;
+        top: 50%;
+        margin: -25px 0px 0px 0px;
+        z-index: 2;
+        font-size: 0;
+        width: 50px;
+        height: 50px;
+    }
+    .painting__block-mainslider .slick-arrow.slick-prev {
+        left: -10px;
+        @media (max-width: 900px) {left: -20px;}
+        @media (max-width: 768px) {left: 0 !important;}
+        background: url('../img/prev.svg') 0 0/100% no-repeat;
+    }
+    .painting__block-mainslider .slick-arrow.slick-next {
+        right: -10px;
+        @media (max-width: 900px) {right: -20px;}
+        @media (max-width: 768px) {right: 0 !important;}
+        background: url('../img/next.svg') 0 0/100% no-repeat;
+    }
+}
+@media (max-width: 500px) {
+    .painting__block-mainslider .slick-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li:not(:last-child) {
+            margin-right: 5px;
+        }
+        button {
+            font-size: 0;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    }
+}
+
+
+.painting__block-minislider .slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.painting__block-minislider .slick-track{
+    display: flex;
+    align-items: flex-start;
+    padding: 0px 0px 20px;
+    // @media(max-width:600px){padding: 0 0 20px 0;}
+}
+.painting__block-minislider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin: -25px 0px 0px 0px;
+    z-index: 2;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+}
+.painting__block-minislider .slick-arrow.slick-prev {
+    left: -10px;
+    @media (max-width: 900px) {left: -20px;}
+    background: url('../img/prev.svg') 0 0/100% no-repeat;
+}
+.painting__block-minislider .slick-arrow.slick-next {
+    right: -10px;
+    @media (max-width: 900px) {right: -20px;}
+    background: url('../img/next.svg') 0 0/100% no-repeat;
+}
