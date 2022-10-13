@@ -252,29 +252,38 @@ body.lock {
 }
 
 .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 60px;
-}
-
-.title h2 {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 60px;
   padding: 0px 30px;
   color: #785117;
   text-transform: uppercase;
   font-size: 42px;
 }
 
-.title span {
-  display: block;
+.title::before {
+  content: "";
   width: 90px;
   height: 3px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -90px;
+  background-color: #785117;
+}
+
+.title::after {
+  content: "";
+  width: 90px;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -90px;
   background-color: #785117;
 }
 
@@ -1123,10 +1132,10 @@ section.religious .more-link {
 
 @media (max-width: 900px) {
   .title {
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
   }
 
-  .title h2 {
+  .title {
     font-size: 32px;
     padding: 0px 25px;
     text-align: center;
@@ -1244,7 +1253,7 @@ section.religious .more-link {
     top: 65px;
   }
 
-  .title h2 {
+  .title {
     font-size: 25px;
   }
 
@@ -1387,7 +1396,7 @@ section.religious .more-link {
 }
 
 @media (max-width: 630px) {
-  .title h2 {
+  .title {
     font-size: 22px;
   }
 }
@@ -1409,10 +1418,6 @@ section.religious .more-link {
 
   .main-die.active {
     top: 60px;
-  }
-
-  .title span {
-    width: 60px;
   }
 
   section:not(.about) {
@@ -1531,11 +1536,7 @@ section.religious .more-link {
 
 @media (max-width: 500px) {
   .title {
-    margin-bottom: 50px;
-  }
-
-  .title span {
-    width: 50px;
+    margin: 0 auto 50px;
   }
 
   .header-burger {
@@ -1623,12 +1624,6 @@ section.religious .more-link {
   .showcase__text {
     padding: 0 15px;
     font-size: 24px;
-  }
-}
-
-@media (max-width: 420px) {
-  .title span {
-    width: 30px;
   }
 }
 
