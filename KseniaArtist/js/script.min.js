@@ -13,12 +13,12 @@ const burger = document.querySelector('.header-burger'),
 //
 
 // Плашка при открытии меню на планшетах
-mainDie.addEventListener('click',(i)=> {
-    mainDie.classList.remove('active');
-    burger.classList.remove('active');
-    menu.classList.remove('active');
-    body.classList.remove('lock');
-})
+// mainDie.addEventListener('click',(i)=> {
+//     mainDie.classList.remove('active');
+//     burger.classList.remove('active');
+//     menu.classList.remove('active');
+//     body.classList.remove('lock');
+// })
 $(document).keydown(function(e) {
     if (e.code === 'Escape') {
         mainDie.classList.remove('active');
@@ -73,3 +73,35 @@ cards.forEach(card => {
         card.querySelector('.card-block__a').classList.remove('active');      
     })
 })
+
+//Табы Об авторе
+const navLink = document.querySelectorAll('.tab-container__links a');
+navLink.forEach(function(e){
+    e.addEventListener('click', (elem)=>{
+        elem.preventDefault();
+        e.classList.add('active');
+        clearNotActiveClass(e);
+        console.log(e.getAttribute('href').slice(1))
+        // document.querySelectorAll('.content-item').forEach( elem => {
+        //     if (e.getAttribute('href').slice(1) == elem.id){
+        //         elem.classList.add('active');
+        //     } else {
+        //         elem.classList.remove('active');
+        //     }
+        // })
+        document.querySelectorAll('.content-item').forEach( elem => {
+            if (e.id == elem.id){
+                elem.classList.add('active');
+            } else {
+                elem.classList.remove('active');
+            }
+        })
+    })
+})
+function clearNotActiveClass(e){
+    navLink.forEach(value => {
+        if (value != e){
+            value.classList.remove('active');
+        }
+    });
+}
