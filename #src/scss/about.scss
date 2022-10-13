@@ -149,7 +149,7 @@ section.about{
         text-align: center;
         padding: 30px 15px;
         font-size: 27px;
-        @media(max-width:768px){
+        @media(max-width:1000px){
             font-size: 22px;
             padding: 25px 15px;
         }
@@ -170,15 +170,15 @@ section.about{
     }
 
     &__content-links {
-        // max-height: 419.8px;
-        // overflow: auto;
         flex: 1 1 auto;
         padding-left: 65px;
-        & a:not(:last-child){margin-bottom: 25px;}
+        @media(max-width:1400px){padding-left: 30px;}
+        & a:not(:last-child){margin-bottom: 25px; @media(max-width:1400px){margin-bottom: 20px;}}
         a{
             display: block;
             font-family: 'TypeyMctypeface';
             font-size: 20px;
+            @media(max-width:1400px){font-size: 18px;}
             line-height: 136%;
             color: #000000;
             transition: all ease 0.3s;
@@ -196,11 +196,8 @@ section.about{
     }
 }
 .content-image {
-    height: fit-content;
-    position: sticky;
-        top: 0;
+    position: relative;
     &__block {
-        
         padding-bottom: 56.87%;
         transform: translate(16px, 16px);
         width: 73.2%;
@@ -214,23 +211,3 @@ section.about{
         img {display: none;}
     }
 }
-// /* W3C standard
-//    сейчас только для Firefox */
-//    * {
-//     scrollbar-width:thin;
-//     scrollbar-color: #785117 rgba(120, 81, 23, 0.2);
-//   }
-  
-//   /* для Chrome/Edge/Safari */
-//   *::-webkit-scrollbar {
-//     height: 3px;
-//     width: 3px;
-//   }
-//   *::-webkit-scrollbar-track {
-//     // background: #785117;
-//   }
-//   *::-webkit-scrollbar-thumb {
-//     background-color: #785117;
-//     border-radius: 10px;
-//     border: 0.5px solid rgba(120, 81, 23, 0.2);
-//   }

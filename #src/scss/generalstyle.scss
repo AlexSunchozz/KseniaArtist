@@ -32,7 +32,6 @@ body.lock{overflow: hidden;}
     flex-direction: column;
 }
 .container{
-    // max-width: 1400px;
     margin: 0 auto;
     padding: 0px 71px;
     @media (max-width:1200px){padding: 0px 40px;}
@@ -89,6 +88,16 @@ body.lock{overflow: hidden;}
 }
 .title::before{
     content: '';
+    @media (max-width:900px){
+        width: 60px;
+        height: 2px;
+        right: -60px;
+    }
+    @media (max-width:600px){
+        width: 40px;
+        height: 1px;
+        right: -40px;
+    }
     width: 90px;
     height: 3px;
     position: absolute;
@@ -101,6 +110,16 @@ body.lock{overflow: hidden;}
     content: '';
     width: 90px;
     height: 3px;
+    @media (max-width:900px){
+        width: 60px;
+        height: 2px;
+        left: -60px;
+    }
+    @media (max-width:600px){
+        width: 40px;
+        height: 1px;
+        left: -40px;
+    }
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

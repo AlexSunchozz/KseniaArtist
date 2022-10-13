@@ -404,6 +404,18 @@ section:not(.about) {
     text-align: center;
   }
 
+  .title::before {
+    width: 60px;
+    height: 2px;
+    right: -60px;
+  }
+
+  .title::after {
+    width: 60px;
+    height: 2px;
+    left: -60px;
+  }
+
   .more-link {
     margin-top: 60px !important;
   }
@@ -480,6 +492,18 @@ section:not(.about) {
 
   .main-die.active {
     top: 60px;
+  }
+
+  .title::before {
+    width: 40px;
+    height: 1px;
+    right: -40px;
+  }
+
+  .title::after {
+    width: 40px;
+    height: 1px;
+    left: -40px;
   }
 
   section:not(.about) {

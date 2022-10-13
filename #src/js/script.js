@@ -116,9 +116,18 @@ navContentAbout.forEach(element => {
                 }
             })
         }
+        checkNonActiveTabBlock()
     })
 });
 
+function checkNonActiveTabBlock(){
+    document.querySelectorAll('.content-item').forEach(elem=>{
+        if (getComputedStyle(elem).display == 'none'){
+            elem.childNodes[1].childNodes[1].classList.add('active')
+            elem.childNodes[3].childNodes[1].childNodes[1].classList.add('active')
+        }
+    })
+}
 function clearNotActiveClassNavContentAbout(e){
     navContentAbout.forEach(value => {
         if (value != e){
