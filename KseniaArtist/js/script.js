@@ -81,14 +81,6 @@ navLink.forEach(function(e){
         elem.preventDefault();
         e.classList.add('active');
         clearNotActiveClass(e);
-        console.log(e.getAttribute('href').slice(1))
-        // document.querySelectorAll('.content-item').forEach( elem => {
-        //     if (e.getAttribute('href').slice(1) == elem.id){
-        //         elem.classList.add('active');
-        //     } else {
-        //         elem.classList.remove('active');
-        //     }
-        // })
         document.querySelectorAll('.content-item').forEach( elem => {
             if (e.id == elem.id){
                 elem.classList.add('active');
@@ -105,3 +97,4 @@ function clearNotActiveClass(e){
         }
     });
 }
+//Табы внутри табов Об авторе
