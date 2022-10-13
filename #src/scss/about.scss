@@ -147,7 +147,7 @@ section.about{
         justify-content: center; 
         align-items: center; 
         text-align: center;
-        padding: 38px 15px;
+        padding: 30px 15px;
         font-size: 27px;
         @media(max-width:768px){
             font-size: 22px;
@@ -160,8 +160,9 @@ section.about{
         background: rgba(226, 201, 136, 0.6);
         box-shadow: 0px 0px 10px rgba(120, 81, 23, 0.4);
     }
+    &__content.active{display: flex;}
     &__content {
-        display: flex;
+        display: none;
         padding: 60px 0px;
         box-shadow: 0px 0px 10px rgba(120, 81, 23, 0.4);
         background-color: #f0eac8;
@@ -204,5 +205,3 @@ section.about{
         }
     }
 }
-
-#content-item2{display: none;}
