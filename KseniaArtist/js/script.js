@@ -1,3 +1,5 @@
+// const { active } = require("browser-sync");
+
 const burger = document.querySelector('.header-burger'),
       menu = document.querySelector('.menu'),
       body = document.body,
@@ -82,7 +84,7 @@ navLink.forEach(function(e){
         e.classList.add('active');
         clearNotActiveClass(e);
         document.querySelectorAll('.content-item').forEach( elem => {
-            if (e.id == elem.id){
+            if (e.getAttribute('href').slice(1) == elem.id){
                 elem.classList.add('active');
             } else {
                 elem.classList.remove('active');
@@ -98,3 +100,29 @@ function clearNotActiveClass(e){
     });
 }
 //Табы внутри табов Об авторе
+const navContentAbout = document.querySelectorAll('.tab-container__content-links a');
+navContentAbout.forEach(element => {
+    element.addEventListener('click',(e)=>{e.preventDefault();})
+    element.addEventListener('mouseover',(e)=>{
+        e.target.classList.add('active');
+        clearNotActiveClassNavContentAbout(e.target)
+        let href = e.target.getAttribute('href').slice(1);
+        if(e.target.classList.contains('active')){
+            document.querySelectorAll('.content-image__block img').forEach((elem)=>{
+                if(elem.id == href){
+                    elem.classList.add('active')
+                } else {
+                    elem.classList.remove('active')
+                }
+            })
+        }
+    })
+});
+
+function clearNotActiveClassNavContentAbout(e){
+    navContentAbout.forEach(value => {
+        if (value != e){
+            value.classList.remove('active');
+        }
+    });
+}

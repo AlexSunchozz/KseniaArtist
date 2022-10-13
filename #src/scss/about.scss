@@ -162,6 +162,7 @@ section.about{
     }
     &__content.active{display: flex;}
     &__content {
+        position: relative;
         display: none;
         padding: 60px 0px;
         box-shadow: 0px 0px 10px rgba(120, 81, 23, 0.4);
@@ -169,6 +170,8 @@ section.about{
     }
 
     &__content-links {
+        // max-height: 419.8px;
+        // overflow: auto;
         flex: 1 1 auto;
         padding-left: 65px;
         & a:not(:last-child){margin-bottom: 25px;}
@@ -176,11 +179,11 @@ section.about{
             display: block;
             font-family: 'TypeyMctypeface';
             font-size: 20px;
-            line-height: 23px;
+            line-height: 136%;
             color: #000000;
             transition: all ease 0.3s;
         }
-        a:hover{
+        a.active{
             color: #785117;
             text-shadow: 5px 5px 4px rgba(120, 81, 23, 0.54);
             transform: translate(-2px, -2px);
@@ -189,19 +192,45 @@ section.about{
     }
 
     &__content-image {
-        flex: 0 1 50%;
+        flex: 0 0 50%;
     }
 }
 .content-image {
+    height: fit-content;
+    position: sticky;
+        top: 0;
     &__block {
+        
         padding-bottom: 56.87%;
         transform: translate(16px, 16px);
         width: 73.2%;
         margin: 0 auto;
         border: 1px solid #785117;
-        img{
+        img.active{
+            display: block;
             box-shadow:2px 5px 15px rgba(120, 81, 23, 0.54);
             transform: translate(-16px, -16px);
         }
+        img {display: none;}
     }
 }
+// /* W3C standard
+//    сейчас только для Firefox */
+//    * {
+//     scrollbar-width:thin;
+//     scrollbar-color: #785117 rgba(120, 81, 23, 0.2);
+//   }
+  
+//   /* для Chrome/Edge/Safari */
+//   *::-webkit-scrollbar {
+//     height: 3px;
+//     width: 3px;
+//   }
+//   *::-webkit-scrollbar-track {
+//     // background: #785117;
+//   }
+//   *::-webkit-scrollbar-thumb {
+//     background-color: #785117;
+//     border-radius: 10px;
+//     border: 0.5px solid rgba(120, 81, 23, 0.2);
+//   }
