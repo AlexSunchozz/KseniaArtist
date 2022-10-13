@@ -35,10 +35,10 @@ body.lock{overflow: hidden;}
 .container{
     // max-width: 1400px;
     margin: 0 auto;
-    padding: 10px 71px;
-    @media (max-width:1200px){padding: 10px 40px;}
-    @media (max-width:600px){padding: 5px 20px;}
-    @media (max-width:500px){min-height: 60px;}
+    padding: 0px 71px;
+    @media (max-width:1200px){padding: 0px 40px;}
+    @media (max-width:600px){padding: 0px 20px;}
+    // @media (max-width:500px){min-height: 60px;}
     box-sizing: content-box;
 }
 ._ibg{
