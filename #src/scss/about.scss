@@ -270,12 +270,10 @@ header.hide{
         margin: 0 auto;
         border: 1px solid #785117;
         img{
-            // display: block;
             box-shadow:2px 5px 15px rgba(120, 81, 23, 0.54);
             transform: translate(-16px, -16px);
             @media(max-width:900px){transform: translate(-12px, -12px);}
         }
-        // img {display: none;}
     }
 }
 

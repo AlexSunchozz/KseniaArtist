@@ -128,7 +128,6 @@ function checkNonActiveTabBlock(){
     document.querySelectorAll('.content-item').forEach(elem=>{
         if (getComputedStyle(elem).display == 'none'){
             elem.childNodes[1].childNodes[1].classList.add('active')
-            // elem.childNodes[3].childNodes[1].childNodes[1].classList.add('active')
             elem.childNodes[3].childNodes[1].classList.add('active')
         }
     })
