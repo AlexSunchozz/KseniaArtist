@@ -173,9 +173,11 @@ section.about{
         flex: 1 1 auto;
         padding-left: 65px;
         @media(max-width:1400px){padding-left: 30px;}
-        & a:not(:last-child){margin-bottom: 25px; @media(max-width:1400px){margin-bottom: 20px;}}
+        @media(max-width:930px){padding-left: 20px;}
+        & a:not(:last-child){margin-bottom: 25px;}
         a{
             display: block;
+            width: fit-content;
             font-family: 'TypeyMctypeface';
             font-size: 20px;
             @media(max-width:1400px){font-size: 18px;}
@@ -195,7 +197,19 @@ section.about{
         flex: 0 0 50%;
     }
 }
+
+.content-image.sticky{
+    position: sticky;
+    top: 20px;
+}
+header{transform: translateY(0); transition: all ease 0.3s;}
+header.hide{
+    transform: translateY(-120%);
+    transition: all ease 0.3s;
+}
 .content-image {
+    transform: translateY(0px);
+    height: fit-content;
     position: relative;
     &__block {
         padding-bottom: 56.87%;

@@ -78,6 +78,7 @@ cards.forEach(card => {
 
 //Табы Об авторе
 const navLink = document.querySelectorAll('.tab-container__links a');
+
 navLink.forEach(function(e){
     e.addEventListener('click', (elem)=>{
         elem.preventDefault();
@@ -135,3 +136,35 @@ function clearNotActiveClassNavContentAbout(e){
         }
     });
 }
+
+//Sticky блок и хеддер
+const   activeTabBlock = document.querySelectorAll('.content-item'),
+        containerTab = document.querySelector('.exhibitions__tab-container');
+
+function addSticky(){
+    posElem = containerTab.getBoundingClientRect().top;
+    activeTabBlock.forEach(e=>{
+        if (e.classList.contains('active')){
+            const elemSticky = e.childNodes[3];
+            if (posElem < 200){
+                elemSticky.classList.add('sticky');
+                
+                document.querySelector('header').classList.add('hide');
+        
+            } else {
+                elemSticky.classList.remove('sticky');
+                document.querySelector('header').classList.remove('hide');
+            }
+        
+            if (Math.abs(e.getBoundingClientRect().top) == e.ofsetHeight || (elemSticky.getBoundingClientRect().bottom <= elemSticky.clientHeight/2)){
+                document.querySelector('header').classList.remove('hide')
+            }
+        }
+    })
+    
+}
+window.addEventListener('scroll', addSticky)
+//
+
+
+
