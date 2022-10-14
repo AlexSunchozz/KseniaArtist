@@ -167,5 +167,35 @@ function addSticky(){
 window.addEventListener('scroll', addSticky)
 //
 
+//Табы 768px
+const tabsItemsSelect = $('.mobile-content__items')
+    function clearNotActiveClassSelect(e){
+        tabsItemsSelect.each(function(i, value){
+            if (value != e){
+                $(value).removeClass('active')
+            }
+        })
+    }
+    document.querySelector('.mobile-content__items').addEventListener('click',(e)=>{
+        e.target.classList.toggle('active')
+        if (e.target.classList.contains('active')){
+            document.querySelector('.arrow').classList.add('active')
+        } else {
+            document.querySelector('.arrow').classList.remove('active')
+        }
+    })
 
+    tabsItemsSelect.change(function(i){
+        i.preventDefault()
+        $(i.target).addClass('active')
+        clearNotActiveClassSelect(i.target)
+        if ($(i.target).hasClass('active')) {
+            $('.mobile-content__list').each(function(index, value){
+                if (value.id == i.target.value){
+                    $(value).addClass('active')
+                } else { $(value).removeClass('active')}
+            })
+        } 
+    })
+//
 
