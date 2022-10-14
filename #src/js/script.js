@@ -6,7 +6,7 @@ const burger = document.querySelector('.header-burger'),
       mainDie = document.querySelector('.main-die');
 
 // Бургер
-    burger.addEventListener('click', ()=>{
+burger.addEventListener('click', ()=>{
     burger.classList.toggle('active');
     menu.classList.toggle('active');
     body.classList.toggle('lock');
@@ -21,6 +21,7 @@ const burger = document.querySelector('.header-burger'),
 //     menu.classList.remove('active');
 //     body.classList.remove('lock');
 // })
+//
 $(document).keydown(function(e) {
     if (e.code === 'Escape') {
         mainDie.classList.remove('active');
