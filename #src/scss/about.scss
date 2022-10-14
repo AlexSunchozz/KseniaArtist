@@ -260,20 +260,22 @@ header.hide{
     transform: translateY(0px);
     height: fit-content;
     position: relative;
+    &__block.active{display: block;}
     &__block {
+        display: none;
         padding-bottom: 56.87%;
         transform: translate(16px, 16px);
         width: 73.2%;
         @media(max-width:900px){width: 84.2%; padding-bottom: 63.87%;}
         margin: 0 auto;
         border: 1px solid #785117;
-        img.active{
-            display: block;
+        img{
+            // display: block;
             box-shadow:2px 5px 15px rgba(120, 81, 23, 0.54);
             transform: translate(-16px, -16px);
             @media(max-width:900px){transform: translate(-12px, -12px);}
         }
-        img {display: none;}
+        // img {display: none;}
     }
 }
 
@@ -344,4 +346,22 @@ header.hide{
     border-top: 10px solid #785117;
     border-right: 10px solid transparent;
     border-left: 10px solid transparent;
+}
+.show{
+    display:block
+}
+.hide{
+    display:none
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 1s;
+}
+@keyframes fade{
+    from{
+        opacity: 0.1;
+    }
+    to{
+        opacity: 1;
+    }
 }

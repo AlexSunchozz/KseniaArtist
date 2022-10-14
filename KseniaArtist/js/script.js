@@ -87,9 +87,9 @@ navLink.forEach(function(e){
         clearNotActiveClass(e);
         document.querySelectorAll('.content-item').forEach( elem => {
             if (e.getAttribute('href').slice(1) == elem.id){
-                elem.classList.add('active');
+                elem.classList.add('active','fade');
             } else {
-                elem.classList.remove('active');
+                elem.classList.remove('active','fade');
             }
         })
     })
@@ -110,11 +110,13 @@ navContentAbout.forEach(element => {
         clearNotActiveClassNavContentAbout(e.target)
         let href = e.target.getAttribute('href').slice(1);
         if(e.target.classList.contains('active')){
-            document.querySelectorAll('.content-image__block img').forEach((elem)=>{
+            document.querySelectorAll('.content-image__block').forEach((elem)=>{
                 if(elem.id == href){
-                    elem.classList.add('active')
+                    
+                    elem.classList.add('active','fade')
+
                 } else {
-                    elem.classList.remove('active')
+                    elem.classList.remove('active', 'fade')
                 }
             })
         }
@@ -126,7 +128,8 @@ function checkNonActiveTabBlock(){
     document.querySelectorAll('.content-item').forEach(elem=>{
         if (getComputedStyle(elem).display == 'none'){
             elem.childNodes[1].childNodes[1].classList.add('active')
-            elem.childNodes[3].childNodes[1].childNodes[1].classList.add('active')
+            // elem.childNodes[3].childNodes[1].childNodes[1].classList.add('active')
+            elem.childNodes[3].childNodes[1].classList.add('active')
         }
     })
 }
