@@ -9,9 +9,43 @@
 </head>
 <body>
     <div class="wrapper">
-        @@include('_header.html')
+        <!-- @@include('_header.html') -->
+        <header class="header">
+            <div class="header-container">
+                <div class="header__logo"><a href="index.html"><img src="./img/logoBlack.svg" class="svg" alt="xenia-artist"></a></div>
+                <nav class="menu header__menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item"><a href="painting.html">Живопись</a></li>
+                        <li class="menu__list-item"><a href="#">Христианское искусство</a></li>
+                        <li class="menu__list-item"><a href="#">Мозаика</a></li>
+                        <li class="menu__list-item"><a href="#">ДПИ</a></li>
+                        <li class="menu__list-item"><a href="about.html">О художнике</a></li>
+                    </ul>
+                </nav>
+                <div class="header-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
         <div class="main">
             <section class="painting">
+                <nav class="navigation">
+                    <div class="navigation__area">
+                        <div class="navigation__area-flag">
+                            Жанры
+                        </div>
+                    </div>
+                    <ul class="navigation__content">
+                        <li><a href="#">Пейзажи</a></li>
+                        <li><a href="#italy">Италия</a></li>
+                        <li><a href="#">Натюрморты</a></li>
+                        <li><a href="#">Музыка</a></li>
+                        <li><a href="#">Сюжеты</a></li>
+                        <li><a href="#">Хорошо, когда друг рядом</a></li>
+                    </ul>
+                </nav>
                 <div class="container">
                     <h1 class="title">Живопись</h2>
                     <div class="painting__block">
@@ -95,7 +129,7 @@
                         </div>
                     </div>
                     <div class="painting__block">
-                        <div class="painting__block-title">
+                        <div id="italy"class="painting__block-title">
                             <div class="painting__block-title-art">
                                 <img src="./img/art.svg" alt="">
                             </div>
@@ -177,6 +211,25 @@
                 </div>
             </section>
         </div>
+        <footer class="footer">
+            <div class="footer-container container">
+                <div class="footer-container__row">
+                    <div class="footer-container__row-logo"><a href="index.html"><img src="./img/logoBlack.svg" alt="xenia-artist"></a></div>
+                    <div class="footer-container__row-representative representative">
+                        <p class="representative__title">Представитель художника</p>
+                        <p>Ольга Задонская</p>
+                        <a href="tel:+79533725336" class="phone-link">+7(953)-372-53-36</a>
+                    </div>
+                    <div class="footer-container__row-mail mail">
+                        <p class="mail__title">Электронная почта:</p>
+                        <a href="mailto:xenia.artist@gmail.com" class="mail-link">xenia.artist@gmail.com</a>
+                    </div>
+                </div>
+                <a href="#" class="footer-container__authors">Сайт выполнен Заблоцким В. А. и Репкиным А. С.</a>
+                <a class="footer-container__privacy" href="#">© Политика конфиденциальности</a>
+            </div>
+        </footer>
+        <!-- @@include('_footer.html') -->
     </div>
 
     <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>

@@ -105,3 +105,17 @@ function clearNotActiveClass(e){
         }
     });
 }
+
+const nav = document.querySelector('.navigation');
+nav.childNodes.forEach(item => {
+    item.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    })
+})
+
+const navShow = setTimeout(() => {
+    nav.classList.add('active');
+}, 1000)
+const navClose = setTimeout(() => {
+    nav.classList.remove('active');
+}, 3000)

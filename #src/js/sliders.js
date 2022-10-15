@@ -14,24 +14,21 @@ $(document).ready(function() {
                     arrows: true,
                     fade: false,
                 }
-            },{
-                breakpoint: 500,
-                settings: {
-                    arrows: false,
-                    dots: true,
-                    autoplay: true,
-                    autoplaySpeed: 4000,
-                }
-            }
+            },
         ]
-        // variableWidth: true,
     });
     $('.painting__block-minislider').slick({
         slidesToShow: 4,
         arrows: true,
-        asNavFor: ".painting__block-mainslider"
-        // dots: false,
-        // adaptiveHeight: true,
-        // variableWidth: true,
+        asNavFor: ".painting__block-mainslider",
+        responsive: [
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 3,
+
+                }
+            }
+        ]
     });
 })
