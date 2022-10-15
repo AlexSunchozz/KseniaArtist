@@ -63,6 +63,12 @@ $(document).ready(function() {
             }
         ]
     });
+    $('a[href^="#"].anchor').click(function(){ 
+        let anchor = $(this).attr('href'); 
+        $('html, body').animate({          
+        scrollTop:  ($(anchor).offset().top - 75)  
+        }, 600);               
+    });
 })
 
 const cards = document.querySelectorAll('.painting__container-row-item');
@@ -101,6 +107,7 @@ function clearNotActiveClass(e){
         }
     });
 }
+
 //Табы внутри табов Об авторе
 const navContentAbout = document.querySelectorAll('.tab-container__content-links a');
 navContentAbout.forEach(element => {
@@ -200,4 +207,3 @@ const tabsItemsSelect = $('.mobile-content__items')
         } 
     })
 //
-

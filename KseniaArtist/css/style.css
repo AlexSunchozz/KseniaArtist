@@ -187,7 +187,7 @@ h6 {
   position: absolute;
   top: 50%;
   margin: -25px 0px 0px 0px;
-  z-index: 2;
+  z-index: 101;
   font-size: 0;
   width: 50px;
   height: 50px;
@@ -1466,11 +1466,11 @@ section.religious .more-link {
 
 @media (max-width: 768px) and (max-width: 768px) {
   .painting__block-mainslider .slick-arrow.slick-prev {
-    left: 0 !important;
+    left: 0;
   }
 
   .painting__block-mainslider .slick-arrow.slick-next {
-    right: 0 !important;
+    right: 0;
   }
 }
 
@@ -1638,28 +1638,21 @@ section.religious .more-link {
 }
 
 @media (max-width: 500px) {
-  .painting__block-mainslider .slick-dots {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .painting__block-mainslider .slick-arrow {
+    top: auto;
+    bottom: 0;
   }
 
-  .painting__block-mainslider .slick-dots li:not(:last-child) {
-    margin-right: 5px;
+  .painting__block-mainslider .slick-arrow.slick-prev {
+    left: 50%;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 
-  .painting__block-mainslider .slick-dots button {
-    font-size: 0;
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    border-radius: 50%;
+  .painting__block-mainslider .slick-arrow.slick-next {
+    right: 50%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
 
   .title {
