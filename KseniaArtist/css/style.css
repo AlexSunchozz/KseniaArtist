@@ -206,6 +206,7 @@ h6 {
 body {
   height: 100%;
   font-family: "LiteraturnayaBook";
+  background-color: #f7f8e3;
 }
 
 body.lock {
@@ -583,10 +584,6 @@ section:not(.about) {
 .mail-link:hover,
 .phone-link:hover {
   color: #785117;
-}
-
-body {
-  background-color: #F7F8E3;
 }
 
 .showcase-block {

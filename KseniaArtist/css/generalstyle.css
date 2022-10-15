@@ -206,6 +206,7 @@ h6 {
 body {
   height: 100%;
   font-family: "LiteraturnayaBook";
+  background-color: #f7f8e3;
 }
 
 body.lock {
