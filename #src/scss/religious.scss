@@ -1,0 +1,111 @@
+@import 'generalstyle.scss';
+@import 'headergrey.scss';
+@import 'footergrey.scss';
+
+body {
+    background-color: #BCBCBC;
+}
+
+.religios{
+    padding: 180px 0px 0px 0px !important;
+    @media (max-width: 768px){padding: 130px 0 0 0 !important;}
+    @media (max-width: 600px){padding: 110px 0 0 0 !important;}
+}
+.title {
+    color: #373737;
+}
+.title::before{
+    background-color: #373737;
+}
+.title::after{
+    background-color: #373737;
+}
+
+.religios-block:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.religious-block {
+        &__container{
+            display: flex;
+            flex-wrap: wrap;
+            @media(max-width:1100px) {
+                justify-content: space-between;
+            }
+            @media(max-width:600px) {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &__item:not(:nth-child(3n)){
+            margin-right: 80px;
+            @media(max-width:1100px) {
+                margin-right: 0px;
+            }
+        }
+		&__item {
+            padding: 20px 20px 0px 20px;
+            margin-bottom: 70px;
+            position: relative;
+            @media(max-width:1100px) {
+                flex: 0 1 45%;
+            }
+            @media(max-width:767px) {
+                padding: 15px 15px 0px 15px;
+            }
+            @media(max-width:600px) {
+                width: 328px;
+                margin-bottom: 60px;
+            }
+            @media(max-width:500px) {
+                width: 280px;
+                margin-bottom: 40px;
+            }
+            flex: 0 1 27.6%;
+		}
+
+		&__item-image {
+            margin-bottom: 20px;
+            padding-bottom: 88.22%;
+            &-description{
+                font-family: 'TypeyMctypeface';
+                font-size: 16px;
+                line-height: 150%;
+                color: #000000;
+                @media(max-width:600px) {
+                    text-align: center;
+                }
+            }
+            img{
+                box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.25);
+            }
+		}
+        &__item::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            @media(max-width:768px) {
+                width: 40px;
+                height: 40px;
+            }
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+        }
+        &__item::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 60px;
+            height: 60px;
+            @media(max-width:768px) {
+                width: 40px;
+                height: 40px;
+            }
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+        }
+}
