@@ -103,6 +103,7 @@
 }
 
 .header-burger {
+    z-index: 3;
     display: none;
     @media (max-width:920px){display: block;}
     @media (max-width:500px){width: 35px;}

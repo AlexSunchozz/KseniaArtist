@@ -5,6 +5,11 @@
 header{
     box-shadow: 0px 4px 40px rgba(120, 81, 23, 0.25);
 }
+.wrapper{
+    overflow: visible !important; 
+    @media(max-width:767px){overflow: hidden !important;}
+}
+
 section.about{
     padding: 170px 0px 0px 0px !important;
     @media (max-width: 768px){padding: 130px 0 0 0 !important;}
@@ -132,14 +137,57 @@ section.about{
 
 .exhibitions {
     padding-bottom: 90px !important;
+    @media(max-width:500px){padding-bottom: 40px !important;}
     &__tab-container {
         display: flex;
         flex-direction: column;
     }
+    .title{
+        @media(max-width:500px){
+            padding: 10px;
+        }
+        @media(max-width:470px){
+            padding: 0px;
+        }
+    }
+    .title::before, .title::after{
+        @media(max-width:470px){
+            width: 20px;
+        }
+        @media(max-width:402px){
+            width: 40px;
+        }
+        @media(max-width:350px){
+            width: 20px;
+        }
+    }
+    .title::before{
+        @media(max-width:470px){
+            right: -24px;
+        }
+        @media(max-width:402px){
+            right: 15px;
+        }
+        @media(max-width:402px){
+            right: 0px;
+        }
+    }
+    .title::after{
+        @media(max-width:470px){
+            left: -24px;
+        }
+        @media(max-width:402px){
+            left: 15px;
+        }
+        @media(max-width:402px){
+            left: 0px;
+        }
+    }
 }
 
 .tab-container {
-    &__links {display: flex; justify-content: center; align-items: center; }
+
+    &__links {display: flex; justify-content: center; align-items: center; @media(max-width:767px){display: none;}}
     &__links a{
         border-bottom: 2px  solid #785117;
         flex: 0 1 50%;
@@ -149,7 +197,7 @@ section.about{
         text-align: center;
         padding: 30px 15px;
         font-size: 27px;
-        @media(max-width:768px){
+        @media(max-width:1000px){
             font-size: 22px;
             padding: 25px 15px;
         }
@@ -160,8 +208,10 @@ section.about{
         background: rgba(226, 201, 136, 0.6);
         box-shadow: 0px 0px 10px rgba(120, 81, 23, 0.4);
     }
-    &__content.active{display: flex;}
+    &__content.active{display: flex; @media(max-width:767px){display: none;}}
     &__content {
+        @media(max-width:767px){display: none;}
+        position: relative;
         display: none;
         padding: 60px 0px;
         box-shadow: 0px 0px 10px rgba(120, 81, 23, 0.4);
@@ -171,16 +221,20 @@ section.about{
     &__content-links {
         flex: 1 1 auto;
         padding-left: 65px;
+        @media(max-width:1400px){padding-left: 30px;}
+        @media(max-width:930px){padding-left: 20px;}
         & a:not(:last-child){margin-bottom: 25px;}
         a{
             display: block;
+            width: fit-content;
             font-family: 'TypeyMctypeface';
             font-size: 20px;
-            line-height: 23px;
+            @media(max-width:1400px){font-size: 18px;}
+            line-height: 136%;
             color: #000000;
             transition: all ease 0.3s;
         }
-        a:hover{
+        a.active{
             color: #785117;
             text-shadow: 5px 5px 4px rgba(120, 81, 23, 0.54);
             transform: translate(-2px, -2px);
@@ -189,19 +243,123 @@ section.about{
     }
 
     &__content-image {
-        flex: 0 1 50%;
+        flex: 0 0 50%;
     }
 }
+
+.content-image.sticky{
+    position: sticky;
+    top: 20px;
+}
+header{transform: translateY(0); transition: all ease 0.3s;}
+header.hide{
+    transform: translateY(-120%);
+    transition: all ease 0.3s;
+}
 .content-image {
+    transform: translateY(0px);
+    height: fit-content;
+    position: relative;
+    &__block.active{display: block;}
     &__block {
+        display: none;
         padding-bottom: 56.87%;
         transform: translate(16px, 16px);
         width: 73.2%;
+        @media(max-width:900px){width: 84.2%; padding-bottom: 63.87%;}
         margin: 0 auto;
         border: 1px solid #785117;
         img{
             box-shadow:2px 5px 15px rgba(120, 81, 23, 0.54);
             transform: translate(-16px, -16px);
+            @media(max-width:900px){transform: translate(-12px, -12px);}
         }
+    }
+}
+
+.tab-container__content-mobile {
+    display: none;
+    @media(max-width:767px){display: flex !important; flex-direction: column;}
+}
+.mobile-content {
+
+    &__items {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        outline: none;
+        margin: 0; 
+        width: 100%; 
+        box-sizing: border-box; 
+        padding: 16px 20px;
+        @media(max-width:500px){ padding: 15px 10px;}
+        background-color: transparent;
+        border-radius: 10px;
+        font-size: 18px;
+        border: 1px solid #785117;
+        color: #785117;
+        box-shadow: 0px 0px 10px rgba(120, 81, 23, 0.22);
+        z-index: 2;
+        & .items-option{
+            width: 100px !important;
+        }
+    }
+    &__list.active{display: flex;}
+    &__list {
+        padding: 40px 20px 40px;
+        @media(max-width:500px){ padding: 30px 0px 30px; box-shadow: none;}
+        box-shadow: 0px 0px 10px rgba(120, 81, 23, 0.22);
+        display: none;
+        flex-direction: column;
+        a{
+            @media(max-width:500px){font-size: 16px;}
+            color: #785117;
+            font-size: 18px;
+            line-height: 140%;
+        }
+        & a:not(:last-child){margin-bottom: 25px;}
+    }
+}
+.select-box{position: relative;}
+.arrow.active{
+    transform: rotate(180deg);
+    top: 45%;
+    transition: all ease 0.3s;
+}
+.arrow {
+    transition: all ease 0.3s;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 52%;
+    transform: translateY(-50%);
+    @media(max-width:500px){ 
+        top:54%;
+        border-top: 7px solid #785117;
+        border-right: 7px solid transparent;
+        border-left: 7px solid transparent;
+    }
+    width: 0;
+    height: 0;
+    border-top: 10px solid #785117;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+.show{
+    display:block
+}
+.hide{
+    display:none
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 1s;
+}
+@keyframes fade{
+    from{
+        opacity: 0.1;
+    }
+    to{
+        opacity: 1;
     }
 }

@@ -85,6 +85,7 @@
 }
 
 .header-burger {
+  z-index: 3;
   display: none;
   position: relative;
   width: 40px;
