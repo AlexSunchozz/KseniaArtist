@@ -101,22 +101,7 @@ function clearNotActiveClass(e){
         }
     });
 }
-<<<<<<< HEAD
 
-const nav = document.querySelector('.navigation');
-nav.childNodes.forEach(item => {
-    item.addEventListener('click', () => {
-        nav.classList.toggle('active');
-    })
-})
-
-const navShow = setTimeout(() => {
-    nav.classList.add('active');
-}, 1000)
-const navClose = setTimeout(() => {
-    nav.classList.remove('active');
-}, 3000)
-=======
 //Табы внутри табов Об авторе
 const navContentAbout = document.querySelectorAll('.tab-container__content-links a');
 navContentAbout.forEach(element => {
@@ -216,5 +201,3 @@ const tabsItemsSelect = $('.mobile-content__items')
         } 
     })
 //
-
->>>>>>> 7912be4717e4c8a5bc1424d9ab4f7d6203740c96
