@@ -1,0 +1,93 @@
+@import 'generalstyle.scss';
+@import 'headergrey.scss';
+@import 'footergrey.scss';
+
+.wrapper{
+    overflow: hidden !important;
+}
+body {
+    background-color: #BCBCBC;
+}
+
+section.mosaic{
+    padding: 180px 0px 20px 0px !important;
+    @media (max-width: 768px){padding: 130px 0 20px 0 !important;}
+    @media (max-width: 600px){padding: 110px 0 20px 0 !important;}
+}
+.title {
+    color: #373737;
+    @media(max-width:500px){margin: 0 auto 40px;}
+}
+.title::before{
+    background-color: #373737;
+}
+.title::after{
+    background-color: #373737;
+}
+
+.mosaic-block {
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -40px;
+        @media(max-width:1100px) {
+            margin: 0 -15px;
+        }
+        @media(max-width:900px) {
+            margin: 0 0px;
+        }
+        @media(max-width:600px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+   
+    &__item {
+        margin-bottom: 70px;
+        padding: 0 40px;
+        @media(max-width:1100px) {
+            padding: 0 15px;
+        }
+        @media(max-width:900px) {
+            flex: 0 1 50%;
+            padding: 0 30px;
+        }
+        @media(max-width:700px) {
+            padding: 0 10px;
+        }
+        @media(max-width:600px) {
+            width: 70%;
+            padding: 0;
+        }
+        @media(max-width:500px) {
+            width: 90%;
+            margin-bottom: 50px;
+        }
+        @media(max-width:426px) {
+            width: 95%;
+        }
+        flex: 1 1 50%;
+    }
+
+
+    &__item-image {
+        position: relative;
+        @media(max-width:400px) {
+            padding: 15px 15px 0px 15px;
+        }
+        margin-bottom: 20px;
+        &-description{
+            font-family: 'TypeyMctypeface';
+            font-size: 16px;
+            line-height: 150%;
+            color: #000000;
+            @media(max-width:600px) {
+                text-align: center;
+            }
+        }
+        img{
+            width: 100%;
+            box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
