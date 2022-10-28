@@ -46,6 +46,11 @@ nav.childNodes.forEach(item => {
         nav.classList.toggle('active');
     })
 })
+document.addEventListener('click',(e) => {
+    if (!e.target.classList.contains('navi')) {
+        nav.classList.remove('active');
+    }
+})
 
 const navShow = setTimeout(() => {
     nav.classList.add('active');
