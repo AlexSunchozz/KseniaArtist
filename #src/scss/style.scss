@@ -427,3 +427,198 @@ section.religious .more-link{
         }
     }
 }
+.dpi__title, .religious-title{
+    text-align: center;
+}
+.religious-title::after{
+
+    @media (max-width:542px){
+        width: 30px !important;
+        left: -20px;
+    }
+    @media (max-width:483px){
+        width: 25px !important;
+        left: -7px;
+    }
+    @media (max-width:453px){
+        width: 30px !important;
+        left: 50px;
+    }
+    @media (max-width:440px){
+        width: 40px !important;
+        left: 0px;
+    }
+    @media (max-width:350px){
+        width: 25px !important;
+    }
+}
+.religious-title::before{
+    @media (max-width:542px){
+        width: 30px !important;
+        right: -20px;
+    }
+    @media (max-width:483px){
+        width: 25px !important;
+        right: -7px;
+    }
+    @media (max-width:453px){
+        width: 30px !important;
+        right: 50px;
+    }
+    @media (max-width:440px){
+        width: 40px !important;
+        right: 0px;
+    }
+    @media (max-width:350px){
+        width: 25px !important;
+        right: 0px;
+    }
+}
+.dpi__title::after{
+    @media (max-width:1400px){
+        width: 60px !important;
+        left: -50px;
+    }
+    @media (max-width:1300px){
+        width: 40px !important;
+        left: -25px;
+    }
+    @media (max-width:1220px){
+        width: 60px!important;
+        left: 60px;
+    }
+    @media (max-width:1200px){
+        width: 30px!important;
+        left: -10px;
+    }
+    @media (max-width:1157px){
+        width: 60px!important;
+        left: 50px;
+    }
+    @media (max-width:1060px){
+        width: 40px!important;
+        left: 0px;
+    }
+    @media (max-width:920px){
+        width: 25px!important;
+        left: 0px;
+    }
+    @media (max-width:900px){
+        width: 60px!important;
+        left: 0px;
+    }
+    @media (max-width:775px){
+        width: 40px!important;
+        left: 0px;
+    }
+    @media (max-width:768px){
+        width: 30px!important;
+        left: -30px;
+    }
+    @media (max-width:736px){
+        width: 60px!important;
+        left: 0px;
+    }
+    @media (max-width:660px){
+        width: 40px!important;
+        left: 0px;
+    }
+    @media (max-width:600px){
+        width: 60px!important;
+        left: 0px;
+    }
+    @media (max-width:560px){
+        width: 40px!important;
+        left: 0px;
+    }
+    @media (max-width:520px){
+        width: 25px!important;
+        left: 0px;
+    }
+    @media (max-width:480px){
+        width: 25px!important;
+        left: -10px;
+    }
+    @media (max-width:426px){
+        width: 40px!important;
+        left: 20px;
+    }
+    @media (max-width:385px){
+        width: 25px!important;
+        left: 0px;
+    }
+}
+.dpi__title::before{
+    @media (max-width:1400px){
+        width: 60px !important;
+        right: -50px;
+    }
+    @media (max-width:1300px){
+        width: 40px !important;
+        right: -25px;
+    }
+    @media (max-width:1220px){
+        width: 60px!important;
+        right: 60px;
+    }
+    @media (max-width:1200px){
+        width: 30px!important;
+        right: -10px;
+    }
+    @media (max-width:1157px){
+        width: 60px!important;
+        right: 50px;
+    }
+    @media (max-width:1060px){
+        width: 40px!important;
+        right: 0px;
+    }
+    @media (max-width:920px){
+        width: 25px!important;
+        right: 0px;
+    }
+    @media (max-width:900px){
+        width: 60px!important;
+        right: 0px;
+    }
+    @media (max-width:775px){
+        width: 40px!important;
+        right: 0px;
+    }
+    @media (max-width:768px){
+        width: 30px!important;
+        right: -30px;
+    }
+    @media (max-width:736px){
+        width: 60px!important;
+        right: 0px;
+    }
+    @media (max-width:660px){
+        width: 40px!important;
+        right: 0px;
+    }
+    @media (max-width:600px){
+        width: 60px!important;
+        right: 0px;
+    }
+    @media (max-width:560px){
+        width: 40px!important;
+        right: 0px;
+    }
+    @media (max-width:520px){
+        width: 25px!important;
+        right: 0px;
+    }
+    @media (max-width:480px){
+        width: 25px!important;
+        right: -10px;
+    }
+    @media (max-width:426px){
+        width: 40px!important;
+        right: 20px;
+    }
+    @media (max-width:385px){
+        width: 25px!important;
+        right: 0px;
+    }
+}
