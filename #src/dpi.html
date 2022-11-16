@@ -30,6 +30,18 @@
             </div>
         </header>
         <div class="main">
+            <div class="popup">
+                <div class="popup__arrow-prev">
+                    назад
+                </div>
+                <div class="popup__content">
+                    <div class="popup__content-text"></div>
+                    <img src="" alt="" class="popup__content-img">
+                </div>
+                <div class="popup__arrow-next">
+                    вперед
+                </div>
+            </div>
             <section class="dpi">
                 <div class="container dpi-container">
                     <h1 class="title">Декоративно-прикладное искусство</h1>
@@ -161,5 +173,19 @@
     <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        const popup = document.querySelector('.popup'),
+              popupImg = popup.querySelector('.popup__content .popup__content-img'),
+              photos = document.querySelectorAll('.item-dpi__image._ibg img')
+
+        console.log(popupImg);
+        photos.forEach(item => {
+            item.addEventListener('click',e => {
+                popup.classList.add('show');
+                console.log(item.src);
+                popupImg.src = item.src;
+            })
+        })
+    </script>
 </body>
 </html>

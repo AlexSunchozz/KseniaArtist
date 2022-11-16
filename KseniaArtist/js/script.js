@@ -207,3 +207,5 @@ const tabsItemsSelect = $('.mobile-content__items')
         } 
     })
 //
+
+
