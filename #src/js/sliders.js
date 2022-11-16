@@ -21,6 +21,7 @@ $(document).ready(function() {
         slidesToShow: 4,
         arrows: true,
         asNavFor: ".painting__block-mainslider",
+        focusOnSelect: true, 
         responsive: [
             {
                 breakpoint: 900,

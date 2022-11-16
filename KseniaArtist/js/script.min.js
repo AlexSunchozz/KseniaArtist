@@ -5,7 +5,7 @@ const burger = document.querySelector('.header-burger'),
       body = document.body,
       mainDie = document.querySelector('.main-die');
 
-// Бургер
+// Бургер   
 burger.addEventListener('click', ()=>{
     burger.classList.toggle('active');
     menu.classList.toggle('active');
@@ -22,14 +22,14 @@ burger.addEventListener('click', ()=>{
 //     body.classList.remove('lock');
 // })
 //
-$(document).keydown(function(e) {
-    if (e.code === 'Escape') {
-        mainDie.classList.remove('active');
-        burger.classList.remove('active');
-        menu.classList.remove('active');
-        body.classList.remove('lock');
-    }
-})
+// $(document).keydown(function(e) {
+//     if (e.code === 'Escape') {
+//         mainDie.classList.remove('active');
+//         burger.classList.remove('active');
+//         menu.classList.remove('active');
+//         body.classList.remove('lock');
+//     }
+// })
 //
 
 // СЛАЙДЕР
