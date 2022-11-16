@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/painting.min.css">
+    <link rel="stylesheet" href="/css/painting.css">
 </head>
 <body>
     <div class="wrapper">
@@ -17,11 +17,8 @@
                     <ul class="menu__list">
                         <li class="menu__list-item"><a href="painting.html">Живопись</a></li>
                         <li class="menu__list-item"><a href="religious.html">Христианское искусство</a></li>
-<<<<<<< HEAD
                         <li class="menu__list-item"><a href="#">Мозаика</a></li>
-=======
                         <li class="menu__list-item"><a href="mosaic.html">Мозаика</a></li>
->>>>>>> 4a4f71685a09876a0b131ccaf1922f1657fa5e25
                         <li class="menu__list-item"><a href="dpi.html">ДПИ</a></li>
                         <li class="menu__list-item"><a href="about.html">О художнике</a></li>
                     </ul>
@@ -34,6 +31,24 @@
             </div>
         </header>
         <div class="main">
+            <div class="popup">
+                <div class="popup__arrow-prev">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="popup__content">
+                    <div class="popup__content-text"></div>
+                    <img src="" alt="" class="popup__content-img">
+                </div>
+                <div class="popup__arrow-next">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="popup-close">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
             <section class="painting">
                 <nav class="navigation navi">
                     <div class="navigation__area">
@@ -480,5 +495,102 @@
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/sliders.js"></script>
+    <script>
+        function searchDescr(photo) {
+            const parent = photo.parentElement;
+            // console.log(parent)
+            if (parent.children.length === 1) {
+                return searchDescr(parent)
+            } else {
+                for (let i of parent.children) {
+                    // if (i.classList.constains('descr')) {
+                    //     // popupText.innerHTML='Vitya)';
+                    //     console.log('dsadasdsafa');
+                    //     return "dasd"
+                    // }
+                    if (i.classList.contains('descr')) {
+                        console.log('uraaa')
+                    }
+                    console.log(i)
+                }
+                // return searchDescr(parent)
+            }
+        }
+        const popup = document.querySelector('.popup'),
+              popupImg = popup.querySelector('.popup__content .popup__content-img'),
+              popupText = popup.querySelector('.popup__content .popup__content-text'),
+              popupNext = popup.querySelector('.popup__arrow-next'),
+              popupPrev = popup.querySelector('.popup__arrow-prev'),
+              popupClose = popup.querySelector('.popup-close'),
+              photos = document.querySelectorAll('.show-img img')
+            //   photos = document.querySelectorAll('.religious-block__item-image img')
+        // открытие popup`a
+        photos.forEach(item => {
+            item.addEventListener('click',e => {
+                popup.classList.add('show');
+                body.classList.add('lock');
+                item.classList.add('show')
+                popupImg.src = item.src;
+                searchDescr(item)
+            })
+        })
+        // переход на след работу
+        popupNext.addEventListener('click',() => {
+            let photoIndex = 0;
+            for (let photo of photos) {
+                if (photo.classList.contains('show')) {
+                    break;
+                } else {
+                    photoIndex += 1;
+                }
+            }
+            photos.forEach(i => {
+                i.classList.remove('show');
+            })
+            if (photoIndex === photos.length-1) {
+                photos[0].classList.add('show');
+            } else {
+                photos[photoIndex+1].classList.add('show');
+            }
+            photos.forEach(i => {
+                if (i.classList.contains('show')) {
+                    popupImg.src = i.src;
+                }
+            })
+        })
+        // 
+        popupPrev.addEventListener('click',() => {
+            let photoIndex = 0;
+            for (let photo of photos) {
+                if (photo.classList.contains('show')) {
+                    break;
+                } else {
+                    photoIndex += 1;
+                }
+            }
+            photos.forEach(i => {
+                i.classList.remove('show');
+            })
+            if (photoIndex === 0) {
+                photos[photos.length-1].classList.add('show');
+            } else {
+                photos[photoIndex-1].classList.add('show');
+            }
+            photos.forEach(i => {
+                if (i.classList.contains('show')) {
+                    popupImg.src = i.src;
+                }
+            })
+        })
+        // закрытие popup`a
+        popupClose.addEventListener('click', () => {
+            popup.classList.remove('show');
+            body.classList.remove('lock');
+            photos.forEach(item => {
+                item.classList.remove('show')
+            })
+        })
+    
+    </script>
 </body>
 </html>
