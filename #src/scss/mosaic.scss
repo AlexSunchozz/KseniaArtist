@@ -28,8 +28,8 @@ section.mosaic{
 .mosaic-block {
     &__container{
         display: flex;
-        flex-wrap: wrap;
-        margin: 0 -40px;
+        flex-direction: column;
+        // flex-wrap: wrap;
         @media(max-width:1100px) {
             margin: 0 -15px;
         }
@@ -41,10 +41,20 @@ section.mosaic{
             align-items: center;
         }
     }
-   
+    &__row.double{
+        display: flex;
+        justify-content: space-around;
+        // .mosaic-block__item{flex: 0 1 50%;}
+    }
+    &__row.solo{
+        display: flex;
+        justify-content: center;
+        // .mosaic-block__item{flex: 0 1 100%;}
+    }
     &__item {
         margin-bottom: 70px;
-        padding: 0 40px;
+        display: flex;
+        flex-direction: column;
         @media(max-width:1100px) {
             padding: 0 15px;
         }
@@ -66,7 +76,6 @@ section.mosaic{
         @media(max-width:426px) {
             width: 95%;
         }
-        flex: 1 1 50%;
     }
 
 
@@ -87,6 +96,7 @@ section.mosaic{
         }
         img{
             width: 100%;
+            height: 100%;
             box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.25);
         }
     }
