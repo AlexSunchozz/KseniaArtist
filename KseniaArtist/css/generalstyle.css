@@ -425,6 +425,7 @@ section:not(.about) {
 
 .popup__content-text {
   color: white;
+  margin-bottom: 10px;
 }
 
 .popup__content-img {
