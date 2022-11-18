@@ -425,6 +425,7 @@ section:not(.about) {
 
 .popup__content-text {
   color: white;
+  margin-bottom: 10px;
 }
 
 .popup__content-img {
@@ -498,7 +499,7 @@ section:not(.about) {
 
 @media (min-width: 769px) {
   .religious-slider .slick-slide {
-    opacity: 0.8;
+    opacity: 0.6;
     -webkit-transition: ease all 2s;
     transition: ease all 2s;
     border: none;
