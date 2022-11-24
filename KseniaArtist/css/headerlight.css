@@ -265,6 +265,10 @@
 }
 
 @media (max-width: 460px) {
+  .menu.active .menu__list {
+    border-left: none;
+  }
+
   .menu {
     width: 100%;
   }
