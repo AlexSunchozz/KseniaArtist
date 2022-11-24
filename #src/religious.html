@@ -109,13 +109,14 @@
                                     <img src="img/religiousPage/icons/3.jpg" alt="Спас Нерукотворный
                                     левкас, яичная темпера 25x18, 2008">
                                 </div>
-                                <div class="religious-block__item-image-description">
+                                <div class="religious-block__item-image-description descr">
                                     Спас Нерукотворный<br>
                                     левкас, яичная темпера 25x18, 2008
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- PAINTING -->
                     <div class="religious-container__block religios-block">
                         <h2 class="title">Живопись</h2>
                         <div class="religious-block__container">
@@ -161,6 +162,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- MOSAIC -->
                     <div class="religious-container__block religios-block">
                         <h2 class="title">Мозаика</h2>
                         <div class="religious-block__container">
@@ -231,125 +233,6 @@
     </div>
     <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <!-- <script src="js/script.js"></script> -->
-
-    <script>
-        function searchDescr(photo) {
-            const parent = photo.parentElement;
-            // console.log(parent)
-            if (parent.children.length === 1) {
-                return searchDescr(parent)
-            } else {
-                for (let i of parent.children) {
-                    // if (i.classList.constains('descr')) {
-                    //     // popupText.innerHTML='Vitya)';
-                    //     console.log('dsadasdsafa');
-                    //     return "dasd"
-                    // }
-                    if (i.classList.contains('descr')) {
-                        return i.innerHTML
-                    }
-                }
-                // return searchDescr(parent)
-            }
-        }
-        const popup = document.querySelector('.popup'),
-              popupImg = popup.querySelector('.popup__content .popup__content-img'),
-              popupText = popup.querySelector('.popup__content .popup__content-text'),
-              popupNext = popup.querySelector('.popup__arrow-next'),
-              popupPrev = popup.querySelector('.popup__arrow-prev'),
-              popupClose = popup.querySelector('.popup-close'),
-              photos = document.querySelectorAll('.show-img img'),
-              body = document.querySelector('body')
-        
-              // открытие popup`a
-        photos.forEach(item => {
-            item.addEventListener('click',e => {
-                popup.classList.add('show')
-                body.classList.add('lock')
-                item.classList.add('show')
-                popupImg.src = item.src;
-                searchDescr(item)
-                popupText.innerHTML = searchDescr(item)
-            })
-        })
-       
-        // переход на след работу
-        popupNext.addEventListener('click',() => {
-            let photoIndex = 0;
-            for (let photo of photos) {
-                if (photo.classList.contains('show')) {
-                    break;
-                } else {
-                    photoIndex += 1;
-                }
-            }
-            photos.forEach(i => {
-                i.classList.remove('show');
-            })
-            if (photoIndex === photos.length-1) {
-                photos[0].classList.add('show');
-            } else {
-                photos[photoIndex+1].classList.add('show');
-            }
-            photos.forEach(i => {
-                if (i.classList.contains('show')) {
-                    popupImg.src = i.src;
-                    popupText.innerHTML = searchDescr(i)
-
-                }
-            })
-        })
-        
-        // переход на предидущий слайд 
-        popupPrev.addEventListener('click',() => {
-            let photoIndex = 0;
-            for (let photo of photos) {
-                if (photo.classList.contains('show')) {
-                    break;
-                } else {
-                    photoIndex += 1;
-                }
-            }
-            photos.forEach(i => {
-                i.classList.remove('show');
-            })
-            if (photoIndex === 0) {
-                photos[photos.length-1].classList.add('show');
-            } else {
-                photos[photoIndex-1].classList.add('show');
-            }
-            photos.forEach(i => {
-                if (i.classList.contains('show')) {
-                    popupImg.src = i.src;
-                    popupText.innerHTML = searchDescr(i)
-                }
-            })
-        })
-        
-        // закрытие popup`a
-        popupClose.addEventListener('click', () => {
-            popup.classList.remove('show');
-            body.classList.remove('lock');
-            photos.forEach(item => {
-                item.classList.remove('show')
-            })
-        })
-    
-        images = document.querySelectorAll('.religious-block__item')
-        images.forEach(item => {
-            if(item.hasAttribute('data-width') && item.hasAttribute('data-height')) {
-                let img = item.querySelector('.religious-block__item-image')
-                if (img.classList.contains('icon')) {
-                    img.style.width = item.getAttribute('data-width') * 10 + 'px'
-                    img.style.height = item.getAttribute('data-height') * 10 + 'px'
-                } else if (img.classList.contains('paint')) {
-                    img.style.width = item.getAttribute('data-width') * 3 + 'px'
-                    img.style.height = item.getAttribute('data-height') * 3 + 'px'
-                }
-            }
-        })
-
-    </script>
+    <script src="js/religious.js"></script>
 </body>
 </html>

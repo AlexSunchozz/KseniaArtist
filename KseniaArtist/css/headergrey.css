@@ -133,7 +133,7 @@
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   width: 25px;
-  top: 10px;
+  top: 9px;
 }
 
 .header-burger.active span:nth-child(2) {
@@ -262,10 +262,6 @@
 
   .header-burger span {
     height: 2px;
-  }
-
-  .header-burger.active span:last-child {
-    bottom: 7px;
   }
 }
 

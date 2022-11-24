@@ -21,7 +21,7 @@ burger.addEventListener('click', ()=>{
 //     menu.classList.remove('active');
 //     body.classList.remove('lock');
 // })
-//
+
 // $(document).keydown(function(e) {
 //     if (e.code === 'Escape') {
 //         mainDie.classList.remove('active');
@@ -30,7 +30,7 @@ burger.addEventListener('click', ()=>{
 //         body.classList.remove('lock');
 //     }
 // })
-//
+
 
 // СЛАЙДЕР
 $(document).ready(function() {
