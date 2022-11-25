@@ -134,7 +134,7 @@ window.addEventListener('keydown', (event) => {
 // -------------- SCALING OF WORKS -------------
 const images = document.querySelectorAll('.mosaic-block__item')
 
-let width = parseInt(window.getComputedStyle(body).getPropertyValue('width')),
+let width = parseInt(window.getComputedStyle(body).getPropertyValue('width'))
 
 if (width < 1000 && width > 900) {
     resizeImg(Math.floor(parseInt(width)/100) * 1.3)   
