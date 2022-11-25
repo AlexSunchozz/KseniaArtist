@@ -44,11 +44,23 @@ section.mosaic{
     &__row.double{
         display: flex;
         justify-content: space-around;
+        .mosaic-block__item {
+            padding: 0px 20px;
+        }
+        @media (max-width: 900px) {
+            flex-direction: column;
+            align-items: center;
+        }
         // .mosaic-block__item{flex: 0 1 50%;}
     }
     &__row.solo{
         display: flex;
         justify-content: center;
+        .mosaic-block__item {
+            // @media (max-width: 900px) {
+            //     flex: 0 1 100%;
+            // }
+        } 
         // .mosaic-block__item{flex: 0 1 100%;}
     }
     &__item {
@@ -56,33 +68,35 @@ section.mosaic{
         display: flex;
         flex-direction: column;
         @media(max-width:1100px) {
-            padding: 0 15px;
+            // padding: 0 15px;
         }
         @media(max-width:900px) {
-            flex: 0 1 50%;
-            padding: 0 30px;
+            flex: 0 1 100%;
+            // padding: 0 30px;
+            align-items: center;
         }
         @media(max-width:700px) {
-            padding: 0 10px;
+            // padding: 0 10px;
         }
-        @media(max-width:600px) {
-            width: 70%;
-            padding: 0;
-        }
-        @media(max-width:500px) {
-            width: 90%;
-            margin-bottom: 50px;
-        }
-        @media(max-width:426px) {
-            width: 95%;
-        }
+        // @media(max-width:600px) {
+        //     width: 70%;
+        //     padding: 0;
+        // }
+        // @media(max-width:500px) {
+        //     width: 90%;
+        //     margin-bottom: 50px;
+        // }
+        // @media(max-width:426px) {
+        //     width: 95%;
+        // }
     }
 
 
     &__item-image {
         position: relative;
+        max-width: 100%;
         @media(max-width:400px) {
-            padding: 15px 15px 0px 15px;
+            // padding: 15px 15px 0px 15px;
         }
         margin-bottom: 20px;
         &-description{
@@ -91,7 +105,10 @@ section.mosaic{
             line-height: 150%;
             color: #000000;
             @media(max-width:600px) {
-                text-align: center;
+                text-align: left;
+            }
+            @media (max-width: 600px) {
+                align-self: flex-start;
             }
         }
         img{

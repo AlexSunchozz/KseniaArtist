@@ -389,6 +389,7 @@ section:not(.about) {
   display: block;
   width: 20px;
   height: 2px;
+  left: 5px;
   background-color: white;
   z-index: 1000000000000000000;
 }
@@ -402,6 +403,38 @@ section:not(.about) {
 .popup__arrow-prev span:last-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  bottom: 7px;
+}
+
+.popup__arrow-next {
+  margin-left: 20px;
+  color: white;
+  display: block;
+  width: 30px;
+  position: relative;
+  cursor: pointer;
+  height: 30px;
+}
+
+.popup__arrow-next span {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 2px;
+  right: 5px;
+  background-color: white;
+  z-index: 1000000000000000000;
+}
+
+.popup__arrow-next span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 8px;
+}
+
+.popup__arrow-next span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   bottom: 7px;
 }
 
@@ -429,39 +462,7 @@ section:not(.about) {
 }
 
 .popup__content-img {
-  max-height: 650px;
-}
-
-.popup__arrow-next {
-  margin-left: 20px;
-  color: white;
-  display: block;
-  width: 30px;
-  position: relative;
-  cursor: pointer;
-  height: 30px;
-}
-
-.popup__arrow-next span {
-  position: absolute;
-  display: block;
-  width: 20px;
-  height: 2px;
-  right: 0;
-  background-color: white;
-  z-index: 1000000000000000000;
-}
-
-.popup__arrow-next span:first-child {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  top: 8px;
-}
-
-.popup__arrow-next span:last-child {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  bottom: 7px;
+  max-height: 630px;
 }
 
 .popup-close {
@@ -1847,13 +1848,13 @@ section.religious .more-link {
     margin-right: 5px;
   }
 
+  .popup__arrow-next {
+    margin-left: 5px;
+  }
+
   .popup__content-img {
     max-width: 470px;
     max-height: 430px;
-  }
-
-  .popup__arrow-next {
-    margin-left: 5px;
   }
 
   .popup-close {

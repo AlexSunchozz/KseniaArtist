@@ -58,7 +58,7 @@
                                     <img src="./img/ДПИ/1.jpg" alt="Декоративно-прикладное искусство">
                                 </div>
                             </div>
-                            <div class="item-dpi__descr">
+                            <div class="item-dpi__descr descr">
                                 Кот-рыболов <br />дерево, масло , 2005
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                                     <img src="./img/ДПИ/2.png" alt="Декоративно-прикладное искусство">
                                 </div>
                             </div>
-                            <div class="item-dpi__descr">
+                            <div class="item-dpi__descr descr">
                                 Мастер <br />дерево, масло , 2009
                             </div>
                         </div>
@@ -78,7 +78,7 @@
                                     <img src="./img/ДПИ/3.png" alt="Декоративно-прикладное искусство">
                                 </div>
                             </div>
-                            <div class="item-dpi__descr">
+                            <div class="item-dpi__descr descr">
                                 Сам не ожидал! <br />дерево, масло , 2011
                             </div>
                         </div>                        
@@ -88,7 +88,7 @@
                                     <img src="./img/ДПИ/1.png" alt="Декоративно-прикладное искусство">
                                 </div>
                             </div>
-                            <div class="item-dpi__descr">
+                            <div class="item-dpi__descr descr">
                                 Кот-рыболов <br />дерево, масло , 2005
                             </div>
                         </div>
@@ -98,7 +98,7 @@
                                     <img src="./img/ДПИ/2.png" alt="Декоративно-прикладное искусство">
                                 </div>
                             </div>
-                            <div class="item-dpi__descr">
+                            <div class="item-dpi__descr descr">
                                 Мастер <br />дерево, масло , 2009
                             </div>
                         </div>
@@ -108,7 +108,7 @@
                                     <img src="./img/ДПИ/3.png" alt="Декоративно-прикладное искусство">
                                 </div>
                             </div>
-                            <div class="item-dpi__descr">
+                            <div class="item-dpi__descr descr">
                                 Сам не ожидал! <br />дерево, масло , 2011
                             </div>
                         </div>                        
@@ -118,7 +118,7 @@
                                     <img src="./img/ДПИ/1.png" alt="Декоративно-прикладное искусство">
                                 </div>
                             </div>
-                            <div class="item-dpi__descr">
+                            <div class="item-dpi__descr descr">
                                 Кот-рыболов <br />дерево, масло , 2005
                             </div>
                         </div>
@@ -128,7 +128,7 @@
                                     <img src="./img/ДПИ/2.png" alt="Декоративно-прикладное искусство">
                                 </div>
                             </div>
-                            <div class="item-dpi__descr">
+                            <div class="item-dpi__descr descr">
                                 Мастер <br />дерево, масло , 2009
                             </div>
                         </div>
@@ -138,20 +138,10 @@
                                     <img src="./img/ДПИ/3.png" alt="Декоративно-прикладное искусство">
                                 </div>
                             </div>
-                            <div class="item-dpi__descr">
+                            <div class="item-dpi__descr descr">
                                 Сам не ожидал! <br />дерево, масло , 2011
                             </div>
                         </div>                        
-                        <!-- <div class="dpi__container-item">
-                            <div class="item-dpi">
-                                <div class="item-dpi__image _ibg">
-                                    <img src="./img/ДПИ/3.png" alt="Декоративно-прикладное искусство">
-                                </div>
-                            </div>
-                            <div class="item-dpi__descr">
-                                Сам не ожидал! <br />дерево, масло , 2011
-                            </div>
-                        </div>                         -->
                     </div>
                 </div>
             </section>
@@ -174,107 +164,10 @@
                 <a class="footer-container__privacy" href="#">© Политика конфиденциальности</a>
             </div>
         </footer>
-        <!-- @@include('_footer.html') -->
     </div>
     <script src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/script.js"></script>
-    <script>
-        function searchDescr(photo) {
-            const parent = photo.parentElement;
-            // console.log(parent)
-            if (parent.children.length === 1) {
-                return searchDescr(parent)
-            } else {
-                for (let i of parent.children) {
-                    // if (i.classList.constains('descr')) {
-                    //     // popupText.innerHTML='Vitya)';
-                    //     console.log('dsadasdsafa');
-                    //     return "dasd"
-                    // }
-                    if (i.classList.contains('descr')) {
-                        console.log('uraaa')
-                    }
-                    console.log(i)
-                }
-                // return searchDescr(parent)
-            }
-        }
-        const popup = document.querySelector('.popup'),
-              popupImg = popup.querySelector('.popup__content .popup__content-img'),
-              popupText = popup.querySelector('.popup__content .popup__content-text'),
-              popupNext = popup.querySelector('.popup__arrow-next'),
-              popupPrev = popup.querySelector('.popup__arrow-prev'),
-              popupClose = popup.querySelector('.popup-close'),
-              photos = document.querySelectorAll('.show-img img')
-            //   photos = document.querySelectorAll('.religious-block__item-image img')
-        // открытие popup`a
-        photos.forEach(item => {
-            item.addEventListener('click',e => {
-                popup.classList.add('show');
-                body.classList.add('lock');
-                item.classList.add('show')
-                popupImg.src = item.src;
-                searchDescr(item)
-            })
-        })
-        // переход на след работу
-        popupNext.addEventListener('click',() => {
-            let photoIndex = 0;
-            for (let photo of photos) {
-                if (photo.classList.contains('show')) {
-                    break;
-                } else {
-                    photoIndex += 1;
-                }
-            }
-            photos.forEach(i => {
-                i.classList.remove('show');
-            })
-            if (photoIndex === photos.length-1) {
-                photos[0].classList.add('show');
-            } else {
-                photos[photoIndex+1].classList.add('show');
-            }
-            photos.forEach(i => {
-                if (i.classList.contains('show')) {
-                    popupImg.src = i.src;
-                }
-            })
-        })
-        // 
-        popupPrev.addEventListener('click',() => {
-            let photoIndex = 0;
-            for (let photo of photos) {
-                if (photo.classList.contains('show')) {
-                    break;
-                } else {
-                    photoIndex += 1;
-                }
-            }
-            photos.forEach(i => {
-                i.classList.remove('show');
-            })
-            if (photoIndex === 0) {
-                photos[photos.length-1].classList.add('show');
-            } else {
-                photos[photoIndex-1].classList.add('show');
-            }
-            photos.forEach(i => {
-                if (i.classList.contains('show')) {
-                    popupImg.src = i.src;
-                }
-            })
-        })
-        // закрытие popup`a
-        popupClose.addEventListener('click', () => {
-            popup.classList.remove('show');
-            body.classList.remove('lock');
-            photos.forEach(item => {
-                item.classList.remove('show')
-            })
-        })
-    
-    </script>
+    <script src="js/dpi.js"></script>
+
 </body>
 </html>

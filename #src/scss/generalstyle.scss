@@ -189,6 +189,7 @@ section:not(.about){
             display: block;
             width: 20px;
             height: 2px;
+            left: 5px;
             background-color: white;
             z-index: 1000000000000000004;
         }
@@ -198,6 +199,34 @@ section:not(.about){
         }
         span:last-child {
             transform: rotate(45deg);
+            bottom:7px; 
+        }
+    }
+
+    &__arrow-next {
+        margin-left: 20px;
+        @media (max-width: 600px) {margin-left: 5px;}
+        color: white;
+        display: block;
+        width: 30px;
+        position: relative;
+        cursor: pointer;
+        height: 30px;
+        span {
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 2px;
+            right: 5px;
+            background-color: white;
+            z-index: 1000000000000000004;
+        }
+        span:first-child {
+            transform: rotate(45deg);
+            top: 8px;
+        }
+        span:last-child {
+            transform: rotate(-45deg);
             bottom:7px; 
         }
     }
@@ -217,7 +246,7 @@ section:not(.about){
     }
 
     &__content-img {
-        max-height: 650px;
+        max-height: 630px;
         @media (max-width: 1200px) {max-height: 620px;}
         @media (max-width: 1000px) {max-height: 590px;}
         @media (max-width: 900px) {max-width: 700px;}
@@ -228,33 +257,6 @@ section:not(.about){
         @media (max-width: 425px) {max-width: 310px; max-height: 390px;}
     }
 
-    &__arrow-next {
-        margin-left: 20px;
-        @media (max-width: 600px) {margin-left: 5px;}
-        color: white;
-        display: block;
-        width: 30px;
-        position: relative;
-        cursor: pointer;
-        height: 30px;
-        span {
-            position: absolute;
-            display: block;
-            width: 20px;
-            height: 2px;
-            right: 0;
-            background-color: white;
-            z-index: 1000000000000000004;
-        }
-        span:first-child {
-            transform: rotate(45deg);
-            top: 8px;
-        }
-        span:last-child {
-            transform: rotate(-45deg);
-            bottom:7px; 
-        }
-    }
 }
 .popup-close {
     position: absolute;
