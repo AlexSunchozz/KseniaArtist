@@ -13,11 +13,103 @@ body {
 }
 .title {
     color: #373737;
+    @media(max-width:1300px){
+        font-size: 36px;
+        text-align: center;
+    }
 }
 .title::before{
+    @media(max-width:1400px){
+        width: 45px;
+        right: -50px;
+    }
+    @media(max-width:1100px){
+        width: 45px;
+        right: -25px;
+    }
+    @media(max-width:1012px){
+        width: 45px;
+        right: 50px;
+    }
+    @media (max-width:925px){
+        width: 45px;
+        right: 0px;
+    }
+    @media (max-width:900px){
+        width: 45px;
+        right: 0px;
+    }
+    @media (max-width:768px){
+        width: 30px;
+        right: -20px;
+    }
+    @media (max-width:735px){
+        width: 45px;
+        right: 0px;
+    }
+    @media (max-width:600px){
+        width: 40px;
+        right: 0px;
+    }
+    @media (max-width:520px){
+        width: 20px;
+        right: 0px;
+    }
+    @media (max-width:426px){
+        width: 40px;
+        right: 0px;
+    }
+    @media (max-width:345px){
+        width: 30px;
+        right: 0px;
+    }
     background-color: #373737;
 }
 .title::after{
+    @media(max-width:1400px){
+        width: 45px;
+        left: -50px;
+    }
+    @media(max-width:1100px){
+        width: 45px;
+        left: -25px;
+    }
+    @media(max-width:1012px){
+        width: 45px;
+        left: 50px;
+    }
+    @media(max-width:925px){
+        width: 45px;
+        left: 0px;
+    }
+    @media (max-width:900px){
+        width: 45px;
+        left: 0px;
+    }
+    @media (max-width:768px){
+        width: 30px;
+        left: -20px;
+    }
+    @media (max-width:735px){
+        width: 45px;
+        left: 0px;
+    }
+    @media (max-width:600px){
+        width: 40px;
+        left: 0px;
+    }
+    @media (max-width:520px){
+        width: 20px;
+        left: 0px;
+    }
+    @media (max-width:426px){
+        width: 40px;
+        left: 0px;
+    }
+    @media (max-width:345px){
+        width: 30px;
+        left: 0px;
+    }
     background-color: #373737;
 }
 
@@ -104,16 +196,12 @@ body {
         @media (max-width: 1100px) {padding-bottom: 92%;}
         @media (max-width: 900px) {padding-bottom: 90%;}
         img {
-            top: 31px; 
-            left: 26px;
+            top: 25px; 
+            left: 25px;
             box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.4);
-            @media (max-width: 1200px) {
-                top: 20px;
-                left: 15px;
-            }
             @media (max-width: 900px) {
-                top: 29px;
-                left: 25px;
+                top: 20px;
+                left: 20px;
             }
         }
     }

@@ -1508,19 +1508,12 @@ section.religious .more-link {
   .footer-container__row-logo a {
     display: block;
     margin: 0 auto;
-    height: 100px;
-    width: 300px;
+    height: 70px;
+    width: 200px;
   }
 
   .footer-container__row-representative {
     margin: 0 0 30px 0px;
-  }
-}
-
-@media (max-width: 820px) and (max-width: 600px) {
-  .footer-container__row-logo a {
-    height: 70px;
-    width: 200px;
   }
 }
 
@@ -1981,10 +1974,11 @@ section.religious .more-link {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 35px;
   }
 
   .footer-container__row-mail {
-    margin-bottom: 60px;
+    margin-bottom: 35px;
   }
 
   .footer-container__row-representative {
@@ -2139,6 +2133,10 @@ section.religious .more-link {
 }
 
 @media (max-width: 460px) {
+  .menu.active .menu__list {
+    border-left: none;
+  }
+
   .menu {
     width: 100%;
   }
