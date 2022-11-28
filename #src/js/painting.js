@@ -106,11 +106,11 @@ document.addEventListener('click', e => {
 
 // переходы и закрытие
 popup.addEventListener('click', (e) => {
-    if (e.target.classList.contains('popup__arrow-next')) {
+    if (e.target.classList.contains('popup__arrow-next') || e.target.parentElement == popup.querySelector('.popup__arrow-next')) {
         goNextPhoto()
-    } else if (e.target.classList.contains('popup__arrow-prev')) {
+    } else if (e.target.classList.contains('popup__arrow-prev')  || e.target.parentElement == popup.querySelector('.popup__arrow-prev')) {
         goPrevPhoto()
-    } else if (e.target.classList.contains('popup-close')) {
+    } else if (e.target.classList.contains('popup-close')  || e.target.parentElement == popup.querySelector('.popup-close')) {
         popupClose()
     }
 })

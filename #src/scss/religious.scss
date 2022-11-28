@@ -69,16 +69,10 @@ section.religious{
 
     &__item-image {
         position: relative;
-        // width: 300px;
-        // height: 400px;
-        @media(max-width:369px) {
-            padding: 15px 15px 0px 15px;
-            height: fit-content;
-        }
-        @media(max-width:345px) {
-            width: 90%;
-        }
         margin-bottom: 20px;
+        @media(max-width:369px){
+            margin-bottom: 10px;
+        }
         &-description{
             font-family: 'TypeyMctypeface';
             font-size: 16px;
@@ -90,6 +84,7 @@ section.religious{
         }
         img{
             width: 100%;
+            height: 100%;
             margin: 0 auto;
             max-height: 400px;
             box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.25);
@@ -115,8 +110,8 @@ section.religious{
             height: 30px;
         }
         @media(max-width:369px){
-            top: -7px;
-            left: -7px;
+            top: -15px;
+            left: -15px;
         }
         border-top: 1px solid #373737;
         border-left: 1px solid #373737;
@@ -141,8 +136,8 @@ section.religious{
             height: 30px;
         }
         @media(max-width:369px){
-            top: -7px;
-            right: -7px;
+            top: -15px;
+            right: -15px;
         }
         border-top: 1px solid #373737;
         border-right: 1px solid #373737;
