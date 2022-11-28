@@ -149,16 +149,6 @@ if (width < 1000 && width > 900) {
 }
 
 
-
-// window.addEventListener('resize', e => {
-//     width = window.getComputedStyle(body).getPropertyValue('width')
-//     if (parseInt(width) <= 1000) {
-//         resizeImg(Math.floor(parseInt(width)/100) * 1.5)
-//     }
-//     resizeImg(Math.floor(parseInt(width)/100))
-// })
-
-
 function resizeImg(k) {
     images.forEach(item => {   
         if(item.hasAttribute('data-width') && item.hasAttribute('data-height')) {

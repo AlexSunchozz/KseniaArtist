@@ -130,15 +130,26 @@ window.addEventListener('keydown', (event) => {
 
 // -------------- SCALING OF WORKS -------------
 const images = document.querySelectorAll('.religious-block__item')
-images.forEach(item => {
-    if(item.hasAttribute('data-width') && item.hasAttribute('data-height')) {
-        let img = item.querySelector('.religious-block__item-image')
-        if (img.classList.contains('icon')) {
-            img.style.width = item.getAttribute('data-width') * 10 + 'px'
-            img.style.height = item.getAttribute('data-height') * 10 + 'px'
-        } else if (img.classList.contains('paint')) {
-            img.style.width = item.getAttribute('data-width') * 3 + 'px'
-            img.style.height = item.getAttribute('data-height') * 3 + 'px'
+let width = parseInt(window.getComputedStyle(body).getPropertyValue('width'))
+
+if (width < 370) {
+    resizeImg(9, 2.5)   
+} else {
+    resizeImg(10)   
+}
+
+function resizeImg(kIcon, kMosaic = 3) {
+    images.forEach(item => {
+        if(item.hasAttribute('data-width') && item.hasAttribute('data-height')) {
+            let img = item.querySelector('.religious-block__item-image')
+            if (img.classList.contains('icon')) {
+                img.style.width = item.getAttribute('data-width') * kIcon + 'px'
+                img.style.height = item.getAttribute('data-height') * kIcon + 'px'
+            } else if (img.classList.contains('paint')) {
+                img.style.width = item.getAttribute('data-width') * kMosaic + 'px'
+                img.style.height = item.getAttribute('data-height') * kMosaic + 'px'
+            }
         }
-    }
-})
+    })
+}
+
