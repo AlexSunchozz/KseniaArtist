@@ -94,6 +94,7 @@
 }
 
 .header-burger span {
+  border-radius: 40px;
   position: absolute;
   left: 0;
   -webkit-transition: all ease 0.4s;
