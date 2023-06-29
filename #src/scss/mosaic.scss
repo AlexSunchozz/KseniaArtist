@@ -43,9 +43,9 @@ section.mosaic{
     }
     &__row.double{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         .mosaic-block__item {
-            padding: 0px 20px;
+            padding: 0px 30px;
         }
         @media (max-width: 900px) {
             flex-direction: column;

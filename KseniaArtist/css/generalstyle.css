@@ -164,7 +164,6 @@ h6 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 0px 0px 20px 0px;
 }
 
 .painting__block-minislider .slick-list {

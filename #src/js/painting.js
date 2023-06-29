@@ -138,7 +138,7 @@ $(document).ready(function() {
         arrows: false,
         dots: false,
         asNavFor: ".painting__block-minislider_p",
-        adaptiveHeight: true,
+        adaptiveHeight: false,
         responsive: [
             {
                 breakpoint: 768,
